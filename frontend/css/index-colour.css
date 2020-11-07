@@ -1,0 +1,21 @@
+@import "./index-colour-declaration.css";
+
+.header-background {
+  background-color: var(--theme-header-background);
+}
+.intro-background {
+  background-color: var(--theme-intro-background);
+}
+.footer-background {
+  background-color: var(--theme-footer-background);
+}
+
+.header {
+  color: var(--theme-text);
+}
+.intro {
+  color: var(--theme-text-invert);
+}
+.footer {
+  color: var(--theme-text);
+}

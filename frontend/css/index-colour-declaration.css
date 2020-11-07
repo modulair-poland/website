@@ -1,0 +1,12 @@
+.theme-light, :root {
+  --theme-text: #272727;
+  --theme-text-invert: #ffffff;
+  --theme-text-light: #5e5e5e;
+  --theme-text-light-emphasis: #4e4e4e;
+
+  --theme-header-background: #ffffff;
+  --theme-intro-background: #003a66; /*that is to be replaced with an image*/
+  --theme-footer-background: #e0e0e0e0;
+
+  --theme-outline: #eeeeee;
+}

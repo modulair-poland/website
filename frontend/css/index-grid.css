@@ -1,0 +1,82 @@
+html {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  grid-template-columns: [most-left] 5% [left] 1fr [right] 5% [most-right];
+  grid-template-rows: [header] 55px [intro] 350px [getting-started] auto [my-module] auto [blog] auto [footer] auto [most-bottom];
+
+  margin: 0px;
+  height: 100%;
+}
+
+/* background layout */
+.header-background {
+  grid-area: header / most-left / intro / most-right;
+}
+.intro-background {
+  grid-area: intro / most-left / getting-started / most-right;
+}
+.getting-started-background {
+  grid-area: getting-started / most-left / my-module / most-right;
+}
+.my-module-background {
+  grid-area: my-module / most-left / blog / most-right;
+}
+.blog-background {
+  grid-area: blog / most-left / footer / most-right;
+}
+.footer-background {
+  grid-area: footer / most-left / most-bottom / most-right;
+}
+
+/* main content container layout */
+.header {
+  grid-area: header / left / intro / right;
+
+  display: grid;
+  grid-template-columns: [logo] 150px [home] auto [get-started] auto [modules] auto [documentation] auto [right] 1fr [most-right];
+  grid-template-rows: [top] 1fr [bottom];
+}
+.intro {
+  grid-area: intro / left / getting-started / right;
+  padding: 40px 0px 30px 0px;
+}
+.getting-started {
+  grid-area: getting-started / left / my-module / right;
+  padding: 30px 0px 30px 0px;
+}
+.my-module {
+  grid-area: my-module / left / blog / right;
+  padding: 30px 0px 30px 0px;
+}
+.blog {
+  grid-area: blog / left / footer / right;
+  padding: 30px 0px 30px 0px;
+}
+.footer {
+  grid-area: footer / left / most-bottom / right;
+  padding: 30px 0px 30px 0px;
+}
+
+/* subcontainer layout:*/
+
+/* header */
+.header > a {
+  margin: auto 20px auto 20px;
+}
+
+/* getting started */
+.getting-started > .panels {
+  display: grid;
+  grid-template-columns: [panel1] 1fr [panel2] 1fr [panel3] 1fr [right];
+  grid-template-rows: [top] auto [bottom];
+}
+.getting-started > .panels > .panel {
+  margin: 10px 10px 10px 10px;
+  border-radius: 10px;
+}
+.getting-started > .panels > .panel > .text {
+  padding: 10px 20px 30px 20px;
+}

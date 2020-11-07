@@ -1,0 +1,4 @@
+.getting-started > .panels > .panel {
+  box-shadow: 5px 5px 5px #ccc;
+  border: solid 1px var(--theme-outline);
+}
