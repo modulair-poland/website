@@ -55,4 +55,7 @@ body {
   padding: 6px;
   border: none;
   font-size: 17px;
+
+  background-color: var(--theme-search-bar);
+  color: var(--theme-text);
 }
