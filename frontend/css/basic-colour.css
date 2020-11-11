@@ -1,4 +1,4 @@
-@import "./index-colour-declaration.css";
+@import "colour-declaration.css";
 
 .header-background {
   background-color: var(--theme-header-background);

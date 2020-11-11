@@ -1,0 +1,11 @@
+html {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  grid-template-columns: [most-left] 5% [left] 1fr [right] 5% [most-right];
+  
+  margin: 0px;
+  height: 100%;
+}

@@ -1,0 +1,8 @@
+.intro-background {
+  grid-area: intro / most-left / getting-started / most-right;
+}
+
+.intro {
+  grid-area: intro / left / getting-started / right;
+  padding: 40px 0px 30px 0px;
+}

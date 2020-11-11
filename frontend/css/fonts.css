@@ -1,4 +1,4 @@
-@import "./index-colour-declaration.css";
+@import "./colour-declaration.css";
 
 html {
   font-family: Helvetica, sans-serif;
@@ -20,13 +20,14 @@ h3 {
   font-weight: normal;
   margin-bottom: 5px;
 }
+
+/* INDEX.HTML */
 .getting-started > .panels {
   color: var(--theme-text-light);
 }
 .getting-started > .panels > .panel > .text {
   font-size: 17px;
 }
-
 
 .my-module > .panel {
   color: var(--theme-text-light);
@@ -35,13 +36,12 @@ h3 {
   font-size: 17px;
 }
 
-
 .blog {
   font-size: 17px;
 }
 
 
-/* MODULE LIST */
+/* MODULE-LIST.HTML */
 .list > .panel > .tags {
   color: var(--theme-text-light);
 }

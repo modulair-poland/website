@@ -1,17 +1,10 @@
+@import "fundamentals.css";
 @import "panels.css";
 @import "header.css";
-
-html {
-  height: 100%;
-}
+@import "footer.css";
 
 body {
-  display: grid;
-  grid-template-columns: [most-left] 5% [left] 1fr [right] 5% [most-right];
   grid-template-rows: [header] 55px [intro] 350px [getting-started] auto [my-module] auto [blog] auto [footer] auto [most-bottom];
-
-  margin: 0px;
-  height: 100%;
 }
 
 /* background layout */
@@ -27,12 +20,8 @@ body {
 .blog-background {
   grid-area: blog / most-left / footer / most-right;
 }
-.footer-background {
-  grid-area: footer / most-left / most-bottom / most-right;
-}
 
 /* main content container layout */
-
 .intro {
   grid-area: intro / left / getting-started / right;
   padding: 40px 0px 30px 0px;
@@ -47,10 +36,6 @@ body {
 }
 .blog {
   grid-area: blog / left / footer / right;
-  padding: 30px 0px 30px 0px;
-}
-.footer {
-  grid-area: footer / left / most-bottom / right;
   padding: 30px 0px 30px 0px;
 }
 

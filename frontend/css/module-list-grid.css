@@ -1,17 +1,11 @@
+@import "fundamentals.css";
 @import "panels.css";
 @import "header.css";
+@import "footer.css";
 
-html {
-  height: 100%;
-}
 
 body {
-  display: grid;
-  grid-template-columns: [most-left] 5% [left] 1fr [right] 5% [most-right];
   grid-template-rows: [header] 55px [intro] 350px [search-bar] auto [list] auto [my-module] auto [footer] auto [most-bottom];
-
-  margin: 0px;
-  height: 100%;
 }
 
 /* background layout */
@@ -27,12 +21,8 @@ body {
 .my-module-background {
   grid-area: my-module / most-left / footer / most-right;
 }
-.footer-background {
-  grid-area: footer / most-left / most-bottom / most-right;
-}
 
 /* main content container layout */
-
 .intro {
   grid-area: intro / left / search-bar / right;
   padding: 40px 0px 30px 0px;
@@ -47,10 +37,6 @@ body {
 }
 .my-module {
   grid-area: my-module / left / footer / right;
-  padding: 30px 0px 30px 0px;
-}
-.footer {
-  grid-area: footer / left / most-bottom / right;
   padding: 30px 0px 30px 0px;
 }
 
@@ -69,9 +55,4 @@ body {
   padding: 6px;
   border: none;
   font-size: 17px;
-}
-
-
-.list > .panel > .text {
-  padding: 0px 20px 30px 20px;
 }

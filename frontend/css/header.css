@@ -1,3 +1,5 @@
+/* HEADER / NAVIGATION BAR */
+
 /* grid */
 .header-background {
   grid-area: header / most-left / intro / most-right;
@@ -9,7 +11,7 @@
   grid-template-columns: [logo] 150px [home] auto [get-started] auto [modules] auto [documentation] auto [right] 1fr [most-right];
   grid-template-rows: [top] 1fr [bottom];
 }
-/* header */
+/* header elements */
 .header > a {
   margin: auto 20px auto 20px;
 }

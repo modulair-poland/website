@@ -1,12 +1,14 @@
-@import "index-colour-declaration.css";
+@import "colour-declaration.css";
 
+/* BACKGROUND */
 .list-background {
   background-color: var(--theme-list-background);
 }
-.list > .panel {
-  background-color: white;
+.panel {
+  background-color: var(--theme-panel-background);
 }
 
+/* TEXT */
 .search-bar {
   color: var(--theme-text);
 }
