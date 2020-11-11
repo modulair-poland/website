@@ -27,6 +27,24 @@ h3 {
   font-size: 17px;
 }
 
+
+.my-module > .panel {
+  color: var(--theme-text-light);
+}
+.my-module > .panel > .text {
+  font-size: 17px;
+}
+
+
 .blog {
   font-size: 17px;
+}
+
+
+/* MODULE LIST */
+.list > .panel > .tags {
+  color: var(--theme-text-light);
+}
+.list > .panel > .price {
+  color: var(--theme-text-light);
 }

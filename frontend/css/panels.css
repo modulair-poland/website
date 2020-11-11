@@ -1,0 +1,36 @@
+
+.panel {
+  display: grid;
+  grid-template-columns: [text] 1fr [photo] 40% [right];
+  grid-template-rows: [top] auto [bottom];
+  margin: 10px 10px 10px 10px;
+  border-radius: 10px;
+}
+
+.panel-singular {
+  display: block;
+  margin: 10px 10px 10px 10px;
+  border-radius: 10px;
+}
+
+.panel-list {
+  display: grid;
+  grid-template-columns: [text] 1fr [text-mid] 1fr [photo] 20% [right];
+  grid-template-rows: [top] auto [additional] auto [bottom];
+  margin: 10px 10px 30px 10px;
+  padding: 15px 15px 15px 15px;
+  border-radius: 10px;
+
+  min-height: 200px;
+}
+.panel-list > .text {
+  grid-area: top / text / additional / photo;
+}
+.panel-list > .tags {
+  grid-area: additional / text / bottom / text-mid;
+  align-self: end;
+}
+.panel-list > .price {
+  grid-area: additional / text-mid / bottom / photo;
+  align-self: end;
+}

@@ -1,4 +1,12 @@
-.getting-started > .panels > .panel {
+.panel {
   box-shadow: 5px 5px 5px #ccc;
   border: solid 1px var(--theme-outline);
+}
+
+.panel > input {
+  border: 2px solid var(--theme-outline);
+}
+
+.panel > input {
+  outline: none;
 }

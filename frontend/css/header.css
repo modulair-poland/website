@@ -1,0 +1,15 @@
+/* grid */
+.header-background {
+  grid-area: header / most-left / intro / most-right;
+}
+.header {
+  grid-area: header / left / intro / right;
+
+  display: grid;
+  grid-template-columns: [logo] 150px [home] auto [get-started] auto [modules] auto [documentation] auto [right] 1fr [most-right];
+  grid-template-rows: [top] 1fr [bottom];
+}
+/* header */
+.header > a {
+  margin: auto 20px auto 20px;
+}

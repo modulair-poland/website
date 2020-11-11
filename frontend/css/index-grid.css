@@ -1,3 +1,6 @@
+@import "panels.css";
+@import "header.css";
+
 html {
   height: 100%;
 }
@@ -12,9 +15,6 @@ body {
 }
 
 /* background layout */
-.header-background {
-  grid-area: header / most-left / intro / most-right;
-}
 .intro-background {
   grid-area: intro / most-left / getting-started / most-right;
 }
@@ -32,13 +32,7 @@ body {
 }
 
 /* main content container layout */
-.header {
-  grid-area: header / left / intro / right;
 
-  display: grid;
-  grid-template-columns: [logo] 150px [home] auto [get-started] auto [modules] auto [documentation] auto [right] 1fr [most-right];
-  grid-template-rows: [top] 1fr [bottom];
-}
 .intro {
   grid-area: intro / left / getting-started / right;
   padding: 40px 0px 30px 0px;
@@ -62,10 +56,6 @@ body {
 
 /* subcontainer layout:*/
 
-/* header */
-.header > a {
-  margin: auto 20px auto 20px;
-}
 
 /* getting started */
 .getting-started > .panels {
@@ -73,10 +63,9 @@ body {
   grid-template-columns: [panel1] 1fr [panel2] 1fr [panel3] 1fr [right];
   grid-template-rows: [top] auto [bottom];
 }
-.getting-started > .panels > .panel {
-  margin: 10px 10px 10px 10px;
-  border-radius: 10px;
-}
 .getting-started > .panels > .panel > .text {
   padding: 10px 20px 30px 20px;
+}
+.my-module > .panel > .text {
+  padding: 20px 30px 20px 20px;
 }

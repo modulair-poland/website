@@ -1,0 +1,15 @@
+@import "index-colour-declaration.css";
+
+.list-background {
+  background-color: var(--theme-list-background);
+}
+.list > .panel {
+  background-color: white;
+}
+
+.search-bar {
+  color: var(--theme-text);
+}
+.list {
+  color: var(--theme-text);
+}
