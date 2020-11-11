@@ -8,7 +8,7 @@
   grid-area: header / left / intro / right;
 
   display: grid;
-  grid-template-columns: [logo] 150px [home] auto [get-started] auto [modules] auto [documentation] auto [right] 1fr [most-right];
+  grid-template-columns: [logo] 150px [home] auto [get-started] auto [modules] auto [documentation] 1fr [app] auto [faq] auto [about] auto [right] auto [most-right];
   grid-template-rows: [top] 1fr [bottom];
 }
 /* header elements */
