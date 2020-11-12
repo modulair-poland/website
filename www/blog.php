@@ -60,7 +60,7 @@ require_once("dbutils.php");
           echo $row['shortDescription'];
           echo "</div>";
           echo "<div class=\"icon\">";
-          echo "<img src=\"".$row['image']."\" alt=\"this is an icon (type)\"";
+          echo "<img src=\"images/".$row['image']."\" alt=\"this is an icon (type)\"";
           echo "</div> </div>";        
         }
 
