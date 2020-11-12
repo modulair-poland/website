@@ -1,3 +1,6 @@
+<?php
+#require_once("dbutils.php");
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="theme-dark">
   <head>
@@ -46,34 +49,24 @@
     <div class="latest-updates">
       <h1>Latest updates</h1>
       <div class="list">
-        <div class="panel panel-tiny-icon">
-          <div class="text">
-            <h3>update 2.3</h3>
-            This is a short description of the update, but it may be a little bit longer
-          </div>
-          <div class="icon">
-            this is an icon (type)
-          </div>
+        <?php
+        
+        $result=easyQuery("SELECT * FROM blog");
+        while($row = $result->fetch_assoc())
+        {
+          echo "<div class=\"panel panel-tiny-icon\">";
+          echo "<div class=\"text\">";
+          echo "<h3>".$row['title']."</h3>";
+          echo $row['shortDescription'];
+          echo "</div>";
+          echo "<div class=\"icon\">";
+          echo "<img src=\"".$row['image']."\" alt=\"this is an icon (type)\"";
+          echo "</div> </div>";        
+        }
+
+
+        ?>
         </div>
-        <div class="panel panel-tiny-icon">
-          <div class="text">
-            <h3>update 2.2</h3>
-            This is a short description of the update, but it may be a little bit longer
-          </div>
-          <div class="icon">
-            this is an icon (type)
-          </div>
-        </div>
-        <div class="panel panel-tiny-icon">
-          <div class="text">
-            <h3>update 2.1</h3>
-            This is a short description of the update, but it may be a little bit longer
-          </div>
-          <div class="icon">
-            this is an icon (type)
-          </div>
-        </div>
-      </div>
     </div>
     <div class="updates-by-type">
       <h1>Updates by type</h1>
