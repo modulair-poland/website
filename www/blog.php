@@ -1,5 +1,5 @@
 <?php
-#require_once("dbutils.php");
+require_once("dbutils.php");
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="theme-dark">
