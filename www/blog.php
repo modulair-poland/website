@@ -51,8 +51,9 @@ require_once("dbutils.php");
       <div class="list">
         <?php
         
-        $result=easyQuery("SELECT * FROM blog");
-        while($row = $result->fetch_assoc())
+        $result=easyQuery("SELECT * FROM blog ORDER BY id DESC");
+        $i = 3;
+        while(($row = $result->fetch_assoc() ) && $i)
         {
           echo "<div class=\"panel panel-tiny-icon\">";
           echo "<div class=\"text\">";
@@ -60,8 +61,9 @@ require_once("dbutils.php");
           echo $row['shortDescription'];
           echo "</div>";
           echo "<div class=\"icon\">";
-          echo "<img src=\"images/".$row['image']."\" alt=\"this is an icon (type)\"";
+          echo "<img src=\"images/".$row['updateType'].".png\" alt=\"".$row["updateType"]."\">";
           echo "</div> </div>";        
+          $i = $i - 1;
         }
 
 
@@ -107,7 +109,25 @@ require_once("dbutils.php");
     </div>
     <div class="all-updates">
       <h1>All updates</h1>
-      list of contents
+      <div class="list">
+        <?php
+        
+        $result=easyQuery("SELECT * FROM blog ORDER BY id DESC");
+        while($row = $result->fetch_assoc() )
+        {
+          echo "<div class=\"panel panel-tiny-icon\">";
+          echo "<div class=\"text\">";
+          echo "<h3>".$row['title']."</h3>";
+          echo $row['shortDescription'];
+          echo "</div>";
+          echo "<div class=\"icon\">";
+          echo "<img src=\"images/".$row['updateType'].".png\" alt=\"".$row["updateType"]."\">";
+          echo "</div> </div>";        
+        }
+
+
+        ?>
+        </div>
     </div>
     <div class="footer">
       this is a footer
