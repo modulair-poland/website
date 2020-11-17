@@ -3,8 +3,6 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./css/module-list.css">
-    <link rel="stylesheet" href="./css/index-colour.css">
-    <link rel="stylesheet" href="./css/index-fancy-decorations.css">
     <title>ModulAir</title>
   </head>
   <body>
@@ -42,8 +40,13 @@
       </a>
     </div>
     <div class="intro">
-      <h1>Modules</h1>
-      a complete list
+      <div class="text">
+        <h1>Modules</h1>
+        a complete list
+      </div>
+      <div class="intro-image">
+        <img src="images/logo.svg" alt="no image found">
+      </div>
     </div>
     <div class="search-bar">
       <h1>A complete list of modules provided by ModulAir</h1>

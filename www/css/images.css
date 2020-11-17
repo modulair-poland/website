@@ -5,6 +5,13 @@
   background-color: var(--theme-image-background);
 }
 
+.intro-image {
+  background-color: transparent;
+}
+.intro-image > img {
+  height: 90%;
+  float: right;
+}
 
 /* an icon */
 .icon {

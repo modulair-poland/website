@@ -40,8 +40,13 @@
       </a>
     </div>
     <div class="intro">
-      <h1>ModulAir</h1>
-      The main website of the greatest CanSat project ever made
+      <div class="text">
+        <h1>ModulAir</h1>
+        The main website of the greatest CanSat project ever made
+      </div>
+      <div class="intro-image">
+        <img src="images/logo.svg" alt="no image found">
+      </div>
     </div>
     <div class="getting-started">
       <h1>Start Your journey with science</h1>

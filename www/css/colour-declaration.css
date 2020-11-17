@@ -10,7 +10,7 @@
   --theme-background: #161616;
 
   --theme-header-background: #1f1f1f;
-  --theme-intro-background: #003a66; /*that is to be replaced with an image*/
+  --theme-intro-background: #023257; /*that is to be replaced with an image new : 023257 old : 003a66 */
   --theme-list-background: #161616; /*that is to be replaced with an image*/
   --theme-image-background: #303030; /*that is to be replaced with an image*/
   --theme-footer-background: #0e0e0e;
@@ -36,7 +36,7 @@
   --theme-background: #ffffff;
 
   --theme-header-background: #ffffff;
-  --theme-intro-background: #003a66; /*that is to be replaced with an image*/
+  --theme-intro-background: #084b80; /*that is to be replaced with an image new : 084b80 old : 003a66 */
   --theme-list-background: #f0f0f0; /*that is to be replaced with an image*/
   --theme-image-background: #e0e0e0; /*that is to be replaced with an image*/
   --theme-footer-background: #e0e0e0e0;

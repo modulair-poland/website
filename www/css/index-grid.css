@@ -1,7 +1,9 @@
 @import "fundamentals.css";
 @import "panels.css";
 @import "header.css";
+@import "intro.css";
 @import "footer.css";
+
 
 body {
   grid-template-rows: [header] 55px [intro] 350px [getting-started] auto [my-module] auto [blog] auto [footer] auto [most-bottom];

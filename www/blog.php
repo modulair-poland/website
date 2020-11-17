@@ -43,8 +43,13 @@ require_once("dbutils.php");
       </a>
     </div>
     <div class="intro">
-      <h1>Official blog</h1>
-      and updates
+      <div class="text">
+        <h1>Official blog</h1>
+        and updates
+      </div>
+      <div class="intro-image">
+        <img src="images/logo.svg" alt="no image found">
+      </div>
     </div>
     <div class="latest-updates">
       <h1>Latest updates</h1>
