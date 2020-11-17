@@ -2,7 +2,7 @@
 require_once("dbutils.php");
 ?>
 <!DOCTYPE html>
-<html lang="en" dir="ltr" class="theme-dark">
+<html lang="en" dir="ltr" class="theme-light">
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./css/blog.css">
@@ -17,28 +17,28 @@ require_once("dbutils.php");
     <div class="footer-background"></div>
 
     <div class="header">
-      <a class="logo">
+      <a class="logo" href="index.php">
         LOGO
       </a>
-      <a class="home">
+      <a class="home" href="index.php">
         Home
       </a>
-      <a class="get-started">
+      <a class="get-started" href="">
         Get started
       </a>
-      <a class="modules">
+      <a class="modules" href="module-list.php">
         Modules
       </a>
-      <a class="documentation">
+      <a class="documentation" href="">
         Documentation
       </a>
-      <a class="app">
+      <a class="app" href="">
         Application
       </a>
-      <a class="faq">
+      <a class="faq" href="">
         FAQ
       </a>
-      <a class="about">
+      <a class="about" href="">
         About
       </a>
     </div>
@@ -50,7 +50,7 @@ require_once("dbutils.php");
       <h1>Latest updates</h1>
       <div class="list">
         <?php
-        
+
         $result=easyQuery("SELECT * FROM blog ORDER BY id DESC");
         $i = 3;
         while(($row = $result->fetch_assoc() ) && $i)
@@ -62,7 +62,7 @@ require_once("dbutils.php");
           echo "</div>";
           echo "<div class=\"icon\">";
           echo "<img src=\"images/".$row['updateType'].".png\" alt=\"".$row["updateType"]."\">";
-          echo "</div> </div>";        
+          echo "</div> </div>";
           $i = $i - 1;
         }
 
@@ -73,37 +73,53 @@ require_once("dbutils.php");
     <div class="updates-by-type">
       <h1>Updates by type</h1>
       <div class="panels">
-        <div class="panel">
-          <div class="text">
-            <h3>Hardware</h3>
-          </div>
-          <div class="icon">
-            type icon
-          </div>
+        <div class="panel-enclosure">
+          <a class="panel-link" href="">
+            <div class="panel">
+              <div class="text">
+                <h3>Hardware</h3>
+              </div>
+              <div class="icon">
+                type icon
+              </div>
+            </div>
+          </a>
         </div>
-        <div class="panel">
-          <div class="text">
-            <h3>Software</h3>
-          </div>
-          <div class="icon">
-            type icon
-          </div>
+        <div class="panel-enclosure">
+          <a class="panel-link" href="">
+            <div class="panel">
+              <div class="text">
+                <h3>Software</h3>
+              </div>
+              <div class="icon">
+                type icon
+              </div>
+            </div>
+          </a>
         </div>
-        <div class="panel">
-          <div class="text">
-            <h3>Support</h3>
-          </div>
-          <div class="icon">
-            type icon
-          </div>
+        <div class="panel-enclosure">
+          <a class="panel-link" href="">
+            <div class="panel">
+              <div class="text">
+                <h3>Support</h3>
+              </div>
+              <div class="icon">
+                type icon
+              </div>
+            </div>
+          </a>
         </div>
-        <div class="panel">
-          <div class="text">
-            <h3>Outreach</h3>
-          </div>
-          <div class="icon">
-            type icon
-          </div>
+        <div class="panel-enclosure">
+          <a class="panel-link" href="">
+            <div class="panel">
+              <div class="text">
+                <h3>Outreach</h3>
+              </div>
+              <div class="icon">
+                type icon
+              </div>
+            </div>
+          </a>
         </div>
       </div>
     </div>
@@ -111,7 +127,7 @@ require_once("dbutils.php");
       <h1>All updates</h1>
       <div class="list">
         <?php
-        
+
         $result=easyQuery("SELECT * FROM blog ORDER BY id DESC");
         while($row = $result->fetch_assoc() )
         {
@@ -122,7 +138,7 @@ require_once("dbutils.php");
           echo "</div>";
           echo "<div class=\"icon\">";
           echo "<img src=\"images/".$row['updateType'].".png\" alt=\"".$row["updateType"]."\">";
-          echo "</div> </div>";        
+          echo "</div> </div>";
         }
 
 

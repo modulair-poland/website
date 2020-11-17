@@ -15,3 +15,7 @@
 .header > a {
   margin: auto 20px auto 20px;
 }
+
+.header > a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}

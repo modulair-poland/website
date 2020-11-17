@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" class="theme-dark">
+<html lang="en" dir="ltr" class="theme-light">
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./css/module-list.css">
@@ -16,28 +16,28 @@
     <div class="footer-background"></div>
 
     <div class="header">
-      <a class="logo">
+      <a class="logo" href="index.php">
         LOGO
       </a>
-      <a class="home">
+      <a class="home" href="index.php">
         Home
       </a>
-      <a class="get-started">
+      <a class="get-started" href="">
         Get started
       </a>
-      <a class="modules">
+      <a class="modules" href="module-list.php">
         Modules
       </a>
-      <a class="documentation">
+      <a class="documentation" href="">
         Documentation
       </a>
-      <a class="app">
+      <a class="app" href="">
         Application
       </a>
-      <a class="faq">
+      <a class="faq" href="">
         FAQ
       </a>
-      <a class="about">
+      <a class="about" href="">
         About
       </a>
     </div>

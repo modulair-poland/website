@@ -48,8 +48,8 @@ body {
   grid-template-columns: [panel1] 1fr [panel2] 1fr [panel3] 1fr [right];
   grid-template-rows: [top] auto [bottom];
 }
-.getting-started > .panels > .panel > .text {
-  padding: 10px 20px 30px 20px;
+.getting-started > .panels > .panel-enclosure > .panel-link > .panel > .text {
+  padding: 0px 20px 15px 20px;
 }
 .my-module > .panel > .text {
   padding: 20px 30px 20px 20px;

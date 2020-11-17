@@ -11,6 +11,8 @@ e.g. class="panel panel-singular"
   grid-template-rows: [top] auto [bottom];
   margin: 10px 10px 10px 10px;
   border-radius: 10px;
+  color: var(--theme-text-light);
+  height: 100%;
 }
 .panel > .text {
   padding: 0px 20px 30px 20px;
@@ -25,6 +27,8 @@ e.g. class="panel panel-singular"
 
 /* panel with text, tags and price on the left and image on the right */
 .panel-list {
+  width: auto;
+  height: auto;
   display: grid;
   grid-template-columns: [text] 1fr [text-mid] 1fr [photo] 20% [right];
   grid-template-rows: [top] auto [additional] auto [bottom];
@@ -53,4 +57,20 @@ e.g. class="panel panel-singular"
 /* panel with a small icon */
 .panel-tiny-icon {
   grid-template-columns: [text] 1fr [photo] 20% [right];
+}
+
+/* a link that is enclosing an entire panel */
+.panel-link:active, .panel-link:visited, .panel-link:hover, .panel-link:link {
+  text-decoration: none;
+}
+
+/* panel eclosure (used with links) */
+.panel-enclosure {
+  margin: 10px 10px 10px 10px;
+  border-radius: 10px;
+  height: auto;
+}
+.panel-enclosure > .panel-link > .panel {
+  margin: 0px;
+  border-radius: 0px;
 }
