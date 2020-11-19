@@ -15,7 +15,7 @@
 
     <div class="header">
       <a class="logo" href="index.php">
-        LOGO
+        ModulAir
       </a>
       <a class="home" href="index.php">
         Home
@@ -35,7 +35,7 @@
       <a class="faq" href="">
         FAQ
       </a>
-      <a class="about" href="">
+      <a class="about" href="about.php">
         About
       </a>
     </div>

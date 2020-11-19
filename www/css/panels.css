@@ -7,7 +7,7 @@ e.g. class="panel panel-singular"
 /* panel with text on the left and image/icon on the right */
 .panel {
   display: grid;
-  grid-template-columns: [text] 1fr [photo] 40% [right];
+  grid-template-columns: [text] 1fr [photo] 35% [right];
   grid-template-rows: [top] auto [bottom];
   margin: 10px 10px 10px 10px;
   border-radius: 10px;
@@ -16,6 +16,7 @@ e.g. class="panel panel-singular"
 }
 .panel > .text {
   padding: 0px 20px 30px 20px;
+  line-height: 1.2;
 }
 
 /* panel only with content (no grid) */
@@ -23,6 +24,12 @@ e.g. class="panel panel-singular"
   display: block;
   margin: 10px 10px 10px 10px;
   border-radius: 10px;
+  height: auto;
+}
+
+/* a panel with a large photo */
+.panel-large {
+  grid-template-columns: [text] 1fr [photo] 40% [right];
 }
 
 /* panel with text, tags and price on the left and image on the right */

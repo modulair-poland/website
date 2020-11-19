@@ -19,3 +19,8 @@
 .header > a:link, a:visited, a:hover, a:active {
   text-decoration: none;
 }
+
+.logo {
+  letter-spacing: 2px;
+  font-size: 23px;
+}

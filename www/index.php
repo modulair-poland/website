@@ -15,7 +15,7 @@
 
     <div class="header">
       <a class="logo" href="index.php">
-        LOGO
+        ModulAir
       </a>
       <a class="home" href="index.php">
         Home
@@ -35,7 +35,7 @@
       <a class="faq" href="">
         FAQ
       </a>
-      <a class="about" href="">
+      <a class="about" href="about.php">
         About
       </a>
     </div>
@@ -97,7 +97,7 @@
       <h1>My Module</h1>
       <div class="panel-enclosure">
         <a class="panel-link" href="">
-          <div class="panel">
+          <div class="panel panel-large">
             <div class="text">
               <h3> Can't find any module that fits Your needs? </h3>
               Now you can design your own with My module kit.

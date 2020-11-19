@@ -21,7 +21,7 @@ h3 {
   margin-bottom: 5px;
 }
 
-/* INDEX.HTML */
+/* INDEX.PHP */
 .getting-started > .panels {
   color: var(--theme-text-light);
 }
@@ -41,10 +41,27 @@ h3 {
 }
 
 
-/* MODULE-LIST.HTML */
+/* MODULE-LIST.PHP */
 .list > .panel > .tags {
   color: var(--theme-text-light);
 }
 .list > .panel > .price {
   color: var(--theme-text-light);
+}
+
+
+/* ABOUT.PHP */
+.text {
+  line-height: 1.6;
+  margin-bottom: 7px;
+  padding-left: 20px;
+}
+.emphasis { /* to improve and put into the text */
+  color: var(--theme-text-light-emphasis);
+  font-size: 22px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
 }
