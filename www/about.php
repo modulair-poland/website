@@ -93,8 +93,40 @@
         </ul>
       </div>
     </div>
+    <div class="special-thanks">
+      <h1>Special thanks</h1>
+      <div class="text">
+        We would like to thank Marta Hering-Zagrocka for designing our logo and Eliza Reinhold for designing visual elements for our website.
+      </div>
+    </div>
     <div class="footer">
-      this is a footer
+      <div class="footer-buttons">
+        <img class="logo" src="./images/logo.svg" alt="logo">
+        <label>&copy; 2020 ModulAir</label>
+
+        <button type="button"> English </button>
+
+        <button type="button"> Dark/Light theme <img src="./images/Moon-Dark-Mode.svg" alt="moon"> / <img src="./images/Sun-Light-Mode.svg" alt="sun"> </button>
+      </div>
+      <div class="footer-links">
+        <div class="text">
+          <a href="https://github.com/modulair-poland">GitHub</a>
+          <a href="https://www.facebook.com/ModulAirTeam">Fanpage</a>
+          <a href="">FAQ</a>
+          <a href="blog.php">Blog</a>
+          <a href="about.php">About</a>
+        </div>
+
+      </div>
+      <div class="footer-sponsors">
+        <div class="text">
+          Sponsors
+          <img src="" alt="logo1">
+          <img src="" alt="logo2">
+          <img src="" alt="logo3">
+        </div>
+
+      </div>
     </div>
   </body>
 </html>

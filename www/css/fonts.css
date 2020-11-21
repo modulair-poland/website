@@ -65,3 +65,9 @@ ul {
   list-style-type: none;
   margin: 0;
 }
+
+
+/* footer */
+.footer {
+  font-size: 15px;
+}
