@@ -65,6 +65,16 @@ e.g. class="panel panel-singular"
 .panel-tiny-icon {
   grid-template-columns: [text] 1fr [photo] 20% [right];
 }
+.image-overlay {
+  grid-area: top / text / bottom / right;
+  justify-self: right;
+}
+.panel-tiny-icon > .text {
+  grid-area: top / text / bottom / photo;
+}
+.panel-tiny-icon > .icon {
+  grid-area: top / photo / bottom / right;
+}
 
 /* a link that is enclosing an entire panel */
 .panel-link:active, .panel-link:visited, .panel-link:hover, .panel-link:link {

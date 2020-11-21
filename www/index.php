@@ -1,3 +1,6 @@
+<?php
+require_once("dbutils.php");
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="theme-light">
   <head>
@@ -9,6 +12,7 @@
     <div class="header-background"></div>
     <div class="intro-background"></div>
     <div class="getting-started-background"></div>
+    <div class="latest-updates-background"></div>
     <div class="my-module-background"></div>
     <div class="blog-background"></div>
     <div class="footer-background"></div>
@@ -56,7 +60,7 @@
             <div class="panel">
               <div class="text">
                 <h3>Get started</h3>
-                this is how to get started quickly
+                This is how to get started quickly
               </div>
               <div class="icon">
                 This is an icon
@@ -69,7 +73,7 @@
             <div class="panel">
               <div class="text">
                 <h3>Modules</h3>
-                a complete list of modules. choose whatever suits your needs
+                A complete list of modules, choose whichever suit your needs
               </div>
               <div class="icon">
                 This is an icon
@@ -82,7 +86,7 @@
             <div class="panel">
               <div class="text">
                 <h3>Documentation</h3>
-                a thouroughly prepared documentation for geeks
+                A thouroughly prepared documentation for geeks
               </div>
               <div class="icon">
                 This is an icon
@@ -92,6 +96,30 @@
         </div>
 
       </div>
+    </div>
+    <div class="latest-updates">
+      <h1>Latest updates</h1>
+      <div class="list">
+        <?php
+
+        $result=easyQuery("SELECT * FROM blog ORDER BY id DESC");
+        $i = 3;
+        while(($row = $result->fetch_assoc() ) && $i)
+        {
+          echo "<div class=\"panel panel-tiny-icon\">";
+          echo "<div class=\"text\">";
+          echo "<h3>".$row['title']."</h3>";
+          echo $row['shortDescription'];
+          echo "</div>";
+          echo "<div class=\"icon\">";
+          echo "<img src=\"images/".$row['updateType'].".png\" alt=\"".$row["updateType"]."\">";
+          echo "</div> </div>";
+          $i = $i - 1;
+        }
+
+
+        ?>
+        </div>
     </div>
     <div class="my-module">
       <h1>My Module</h1>

@@ -66,6 +66,10 @@
           <li>Nikodem Gapski</li>
         </ul>
       </div>
+      <div class="text">
+        Social media:
+        <a href="https://www.facebook.com/ModulAirTeam"> Fanpage </a>, <a href="https://github.com/modulair-poland">GitHub repository</a>
+      </div>
     </div>
     <div class="cansat-contest">
       <h1>CanSat ESA contest</h1>

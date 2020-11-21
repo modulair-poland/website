@@ -5,15 +5,12 @@
 @import "footer.css";
 
 body {
-  grid-template-rows: [header] 55px [intro] 350px [latest-updates] auto [updates-by-type] auto [all-updates] auto [footer] auto [most-bottom];
+  grid-template-rows: [header] 55px [intro] 350px [updates-by-type] auto [all-updates] auto [footer] auto [most-bottom];
 }
 
 /* background layout */
 .intro-background {
-  grid-area: intro / most-left / latest-updates / most-right;
-}
-.latest-updates-background {
-  grid-area: latest-updates / most-left / updates-by-type / most-right;
+  grid-area: intro / most-left / updates-by-type / most-right;
 }
 .updates-by-type-background {
   grid-area: updates-by-type / most-left / all-updates / most-right;
@@ -24,11 +21,7 @@ body {
 
 /* main content container layout */
 .intro {
-  grid-area: intro / left / latest-updates / right;
-  padding: 40px 0px 30px 0px;
-}
-.latest-updates {
-  grid-area: latest-updates / left / updates-by-type / right;
+  grid-area: intro / left / updates-by-type / right;
   padding: 40px 0px 30px 0px;
 }
 .updates-by-type {

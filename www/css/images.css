@@ -26,3 +26,13 @@ img {
 .icon {
   margin: auto;
 }
+
+/* large image overlay : : TODO and to be put in blog.php */
+.image-overlay {
+  /* this is to be done */
+  position: relative;
+  overflow: hidden;
+}
+.image-overlay > img {
+  /* this is to be done */
+}

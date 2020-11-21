@@ -51,30 +51,6 @@ require_once("dbutils.php");
         <img src="images/logo.svg" alt="no image found">
       </div>
     </div>
-    <div class="latest-updates">
-      <h1>Latest updates</h1>
-      <div class="list">
-        <?php
-
-        $result=easyQuery("SELECT * FROM blog ORDER BY id DESC");
-        $i = 3;
-        while(($row = $result->fetch_assoc() ) && $i)
-        {
-          echo "<div class=\"panel panel-tiny-icon\">";
-          echo "<div class=\"text\">";
-          echo "<h3>".$row['title']."</h3>";
-          echo $row['shortDescription'];
-          echo "</div>";
-          echo "<div class=\"icon\">";
-          echo "<img src=\"images/".$row['updateType'].".png\" alt=\"".$row["updateType"]."\">";
-          echo "</div> </div>";
-          $i = $i - 1;
-        }
-
-
-        ?>
-        </div>
-    </div>
     <div class="updates-by-type">
       <h1>Updates by type</h1>
       <div class="panels">
