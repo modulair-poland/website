@@ -12,7 +12,12 @@ if(isset($_POST["title"]))
     {
         $formerror = "Something is not set!";
     }else{
-        easyQuery('INSERT INTO blog (title, shortDescription, updateType, post_date) VALUES (?, ?, ?, ?)', "ssss", $_POST["title"], $_POST["shortDesc"], $_POST["type"], $_POST["date"]);
+      $postDate = $_POST["date"];
+      if($postDate=="")
+      {
+        $postDate = date("Y-m-d");
+      }
+        easyQuery('INSERT INTO blog (title, shortDescription, updateType, post_date) VALUES (?, ?, ?, ?)', "ssss", $_POST["title"], $_POST["shortDesc"], $_POST["type"], $postDate);
     }
         $formerror = "Done!";
         unset($_POST);
