@@ -64,6 +64,7 @@ e.g. class="panel panel-singular"
 /* panel with a small icon */
 .panel-tiny-icon {
   grid-template-columns: [text] 1fr [photo] 20% [right];
+  grid-template-rows: [top] 1fr [bottom] auto [most-bottom];
 }
 .image-overlay {
   grid-area: top / text / bottom / right;
@@ -71,9 +72,14 @@ e.g. class="panel panel-singular"
 }
 .panel-tiny-icon > .text {
   grid-area: top / text / bottom / photo;
+  padding-bottom: 10px;
 }
 .panel-tiny-icon > .icon {
-  grid-area: top / photo / bottom / right;
+  grid-area: top / photo / most-bottom / right;
+}
+.panel-tiny-icon > .date {
+  justify-self: end;
+  padding-bottom: 15px;
 }
 
 /* a link that is enclosing an entire panel */

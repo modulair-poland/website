@@ -113,6 +113,9 @@ require_once("dbutils.php");
           echo "</div>";
           echo "<div class=\"icon\">";
           echo "<img src=\"images/".$row['updateType'].".png\" alt=\"".$row["updateType"]."\">";
+          echo "</div>";
+          echo "<div class=\"date\">";
+          echo "21.11.2020";
           echo "</div> </div>";
           $i = $i - 1;
         }
