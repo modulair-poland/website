@@ -102,7 +102,7 @@ require_once("dbutils.php");
       <div class="list">
         <?php
 
-        $result=easyQuery("SELECT * FROM blog ORDER BY id DESC");
+        $result=easyQuery("SELECT * FROM blog ORDER BY post_date DESC, id DESC");
         $i = 3;
         while(($row = $result->fetch_assoc() ) && $i)
         {
@@ -115,7 +115,7 @@ require_once("dbutils.php");
           echo "<img src=\"images/".$row['updateType'].".png\" alt=\"".$row["updateType"]."\">";
           echo "</div>";
           echo "<div class=\"date\">";
-          echo "21.11.2020";
+          echo date("d.m.Y", strtotime($row['post_date']));
           echo "</div> </div>";
           $i = $i - 1;
         }

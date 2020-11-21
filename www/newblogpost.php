@@ -12,7 +12,7 @@ if(isset($_POST["title"]))
     {
         $formerror = "Something is not set!";
     }else{
-        easyQuery('INSERT INTO blog (title, shortDescription, updateType) VALUES (?, ?, ?)', "sss", $_POST["title"], $_POST["shortDesc"], $_POST["type"]);
+        easyQuery('INSERT INTO blog (title, shortDescription, updateType, post_date) VALUES (?, ?, ?, ?)', "ssss", $_POST["title"], $_POST["shortDesc"], $_POST["type"], $_POST["date"]);
     }
         $formerror = "Done!";
         unset($_POST);
@@ -50,6 +50,7 @@ Short Decription:
 <option value="support">Support</option>
 <option value="outreach">Outreach</option>
 </select>
+<input type="date" name="date">
 <input type="submit" name="sumbit" value="Add new post">
 </form>
 
