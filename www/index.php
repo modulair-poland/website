@@ -89,7 +89,7 @@ require_once("dbutils.php");
                 A thouroughly prepared documentation for geeks
               </div>
               <div class="icon">
-                This is an icon
+                <img src="./images/Documentation.svg" alt="Documentation">
               </div>
             </div>
           </a>
@@ -134,12 +134,7 @@ require_once("dbutils.php");
               Now you can design your own with My module kit.
             </div>
             <div class="image">
-              This is a photofa jab njkab fjksba jagk abg jkabgajk bjag
-              ajkg abgkaj  bgjkabg jkab jkb kjagbskj gbkjasbg jksabg jkab jks bgjkabgaj kjagbskj
-              jag jkbg jkabs jkasb jkgb ka bkjsabg jioehm ioeain an ono asfb kjab jkabsg
-              agkb jkasbg kjabsgkj nakjn gksn uasgoan w onflan wffinaw afwnl anwjnf awnkjl
-              fnakjwfn jkawnfjknakjnf nhgkgmoiesnf awn fjab gonw apihmwap impiamw ipma piwm
-              asj bgajkbg kjb kjs abkj bjkbg jsngjksfsf
+              <img src="./images/my-module.png" alt="My module">
             </div>
           </div>
         </a>

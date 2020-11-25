@@ -53,7 +53,7 @@
       <div class="text">
         ModulAir is a team from Uniwersyteckie Liceum Ogólnokształcące (TU TRZEBA SIE SPYTAC CZY MOZNA UZYC NAZWY) in Toruń taking part in the CanSat competition in Poland.
         Our aim is to popularise science by making the process of mini-satellite creation
-        easier and thus more accessible to people without engineering or low-level programming experience, as well as simply faster for geeks.
+        easier and thus more accessible to people without engineering or programming experience, as well as simply faster for geeks.
         We believe that probe creation doesn't need to be difficult! And that is why we give You all the documentation, projects and tips for doing it Yourself!
       </div>
       <div class="text">

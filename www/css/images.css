@@ -2,7 +2,10 @@
 .image {
   padding: 0px;
   border: 0px;
-  background-color: var(--theme-image-background);
+  /*background-color: var(--theme-image-background);*/
+}
+.image > img {
+  width: 70%;
 }
 
 .intro-image {
@@ -25,6 +28,10 @@ img {
 /* an icon */
 .icon {
   margin: auto;
+  height: auto;
+}
+.icon > img {
+  height: 65px;
 }
 
 /* large image overlay : : TODO and to be put in blog.php */
