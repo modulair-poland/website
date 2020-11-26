@@ -3,6 +3,22 @@ require_once("dbutils.php");
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="theme-light">
+<script>
+   if(localStorage.getItem('theme')) {
+    document.documentElement.className = "theme-dark"; 
+  }
+ function changeTheme()
+ {
+  if(localStorage.getItem('theme')) {
+    document.documentElement.className = "theme-light";
+    localStorage.removeItem('theme');
+  }else{
+    document.documentElement.className = "theme-dark";
+    localStorage.setItem('theme', 1);
+  }
+}
+  </script>
+
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./css/index.css">
@@ -104,20 +120,19 @@ require_once("dbutils.php");
 
         $result=easyQuery("SELECT * FROM blog ORDER BY post_date DESC, id DESC");
         $i = 3;
-        while(($row = $result->fetch_assoc() ) && $i)
-        {
-          echo "<div class=\"panel panel-tiny-icon\">";
-          echo "<div class=\"text\">";
-          echo "<h3>".$row['title']."</h3>";
-          echo $row['shortDescription'];
-          echo "</div>";
-          echo "<div class=\"icon\">";
-          echo "<img src=\"images/".$row['updateType'].".png\" alt=\"".$row["updateType"]."\">";
-          echo "</div>";
-          echo "<div class=\"date\">";
-          echo date("d.m.Y", strtotime($row['post_date']));
-          echo "</div> </div>";
-          $i = $i - 1;
+        while (($row = $result->fetch_assoc()) && $i) {
+            echo "<div class=\"panel panel-tiny-icon\">";
+            echo "<div class=\"text\">";
+            echo "<h3>".$row['title']."</h3>";
+            echo $row['shortDescription'];
+            echo "</div>";
+            echo "<div class=\"icon\">";
+            echo "<img src=\"images/".$row['updateType'].".png\" alt=\"".$row["updateType"]."\">";
+            echo "</div>";
+            echo "<div class=\"date\">";
+            echo date("d.m.Y", strtotime($row['post_date']));
+            echo "</div> </div>";
+            $i = $i - 1;
         }
 
 
@@ -151,7 +166,7 @@ require_once("dbutils.php");
 
         <button type="button"> English </button>
 
-        <button type="button"> Dark/Light theme <img src="./images/Moon-Dark-Mode.svg" alt="moon"> / <img src="./images/Sun-Light-Mode.svg" alt="sun"> </button>
+        <button type="button" onclick="changeTheme()"> Dark/Light theme <img src="./images/Moon-Dark-Mode.svg" alt="moon"> / <img src="./images/Sun-Light-Mode.svg" alt="sun"> </button>
       </div>
       <div class="footer-links">
         <div class="text">
