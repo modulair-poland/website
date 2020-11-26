@@ -20,7 +20,7 @@
   --theme-panel-background: #161616;
 
   --theme-outline: #3e3e3e;
-  --theme-shadow: #111111;
+  --theme-shadow: #111111cc;
 
 
   --theme-search-bar-border-width: 1px;
@@ -39,14 +39,14 @@
   --theme-intro-background: #084b80; /*that is to be replaced with an image new : 084b80 old : 003a66 */
   --theme-list-background: #f0f0f0; /*that is to be replaced with an image*/
   --theme-image-background: #e0e0e0; /*that is to be replaced with an image*/
-  --theme-footer-background: #e0e0e0e0;
+  --theme-footer-background: #e0e0e0;
 
   --theme-search-bar-panel: #e0e0e0e0;
   --theme-search-bar: white;
   --theme-panel-background: white;
 
   --theme-outline: #eeeeee;
-  --theme-shadow: #ccc;
+  --theme-shadow: #999999cc;
 
 
   --theme-search-bar-border-width: 4px;

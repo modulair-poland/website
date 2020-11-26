@@ -3,9 +3,11 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./css/about.css">
+    <script type="text/javascript" src="./scripts/change-theme.js"> </script>
     <title>ModulAir</title>
   </head>
   <body>
+    <div class="body-background"></div>
     <div class="header-background"></div>
     <div class="intro-background"></div>
     <div class="who-we-are-background"></div>
@@ -106,7 +108,7 @@
 
         <button type="button"> English </button>
 
-        <button type="button"> Dark/Light theme <img src="./images/Moon-Dark-Mode.svg" alt="moon"> / <img src="./images/Sun-Light-Mode.svg" alt="sun"> </button>
+        <button id="theme-button" type="button" onclick="changeTheme();"> </button>
       </div>
       <div class="footer-links">
         <div class="text">
@@ -129,4 +131,8 @@
       </div>
     </div>
   </body>
+
+  <script type="text/javascript">
+    doAll();
+  </script>
 </html>

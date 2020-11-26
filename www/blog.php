@@ -6,9 +6,12 @@ require_once("dbutils.php");
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./css/blog.css">
+    <script type="text/javascript" src="./scripts/change-theme.js"> </script>
+    <script type="text/javascript" src="./scripts/change-image-url-theme-blog.js"> </script>
     <title>ModulAir</title>
   </head>
   <body>
+    <div class="body-background"></div>
     <div class="header-background"></div>
     <div class="intro-background"></div>
     <div class="latest-updates-background"></div>
@@ -61,7 +64,7 @@ require_once("dbutils.php");
                 <h3>Hardware</h3>
               </div>
               <div class="icon">
-                type icon
+                <img class="hardware" alt="hardware">
               </div>
             </div>
           </a>
@@ -73,7 +76,7 @@ require_once("dbutils.php");
                 <h3>Software</h3>
               </div>
               <div class="icon">
-                type icon
+                <img class="software" alt="software">
               </div>
             </div>
           </a>
@@ -85,7 +88,7 @@ require_once("dbutils.php");
                 <h3>Support</h3>
               </div>
               <div class="icon">
-                type icon
+                <img class="support" alt="support">
               </div>
             </div>
           </a>
@@ -97,7 +100,7 @@ require_once("dbutils.php");
                 <h3>Outreach</h3>
               </div>
               <div class="icon">
-                type icon
+                <img class="outreach" alt="outreach">
               </div>
             </div>
           </a>
@@ -118,7 +121,7 @@ require_once("dbutils.php");
           echo $row['shortDescription'];
           echo "</div>";
           echo "<div class=\"icon\">";
-          echo "<img src=\"images/".$row['updateType'].".png\" alt=\"".$row["updateType"]."\">";
+          echo "<img class=\"".$row['updateType']."\" alt=\"".$row["updateType"]."\">";
           echo "</div>";
           echo "<div class=\"date\">";
           echo date("d.m.Y", strtotime($row['post_date']));
@@ -136,7 +139,7 @@ require_once("dbutils.php");
 
         <button type="button"> English </button>
 
-        <button type="button"> Dark/Light theme <img src="./images/Moon-Dark-Mode.svg" alt="moon"> / <img src="./images/Sun-Light-Mode.svg" alt="sun"> </button>
+        <button id="theme-button" type="button" onclick="changeTheme();"> </button>
       </div>
       <div class="footer-links">
         <div class="text">
@@ -159,4 +162,8 @@ require_once("dbutils.php");
       </div>
     </div>
   </body>
+
+  <script type="text/javascript">
+    doAll();
+  </script>
 </html>

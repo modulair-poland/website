@@ -12,6 +12,7 @@ e.g. class="panel panel-singular"
   margin: 10px 10px 10px 10px;
   border-radius: 10px;
   color: var(--theme-text-light);
+  background-color: var(--theme-background);
 }
 .panel > .text {
   padding: 0px 20px 30px 20px;

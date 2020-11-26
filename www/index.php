@@ -3,28 +3,15 @@ require_once("dbutils.php");
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="theme-light">
-<script>
-   if(localStorage.getItem('theme')) {
-    document.documentElement.className = "theme-dark"; 
-  }
- function changeTheme()
- {
-  if(localStorage.getItem('theme')) {
-    document.documentElement.className = "theme-light";
-    localStorage.removeItem('theme');
-  }else{
-    document.documentElement.className = "theme-dark";
-    localStorage.setItem('theme', 1);
-  }
-}
-  </script>
-
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./css/index.css">
+    <script type="text/javascript" src="./scripts/change-theme.js"> </script>
+    <script type="text/javascript" src="./scripts/change-image-url-theme-index.js"> </script> <!-- THE ORDER OF THESE SCRIPTS MATTERS!!!!!! (FUNCTION OVERLOADING) !-->
     <title>ModulAir</title>
   </head>
   <body>
+    <div class="body-background"></div>
     <div class="header-background"></div>
     <div class="intro-background"></div>
     <div class="getting-started-background"></div>
@@ -79,7 +66,7 @@ require_once("dbutils.php");
                 This is how to get started quickly
               </div>
               <div class="icon">
-                This is an icon
+                <img id="get-started" alt="Get started">
               </div>
             </div>
           </a>
@@ -92,7 +79,7 @@ require_once("dbutils.php");
                 A complete list of modules, choose whichever suit your needs
               </div>
               <div class="icon">
-                This is an icon
+                <img id="modules" alt="Modules">
               </div>
             </div>
           </a>
@@ -105,7 +92,7 @@ require_once("dbutils.php");
                 A thouroughly prepared documentation for geeks
               </div>
               <div class="icon">
-                <img src="./images/Documentation.svg" alt="Documentation">
+                <img id="documentation" alt="Documentation">
               </div>
             </div>
           </a>
@@ -127,7 +114,7 @@ require_once("dbutils.php");
             echo $row['shortDescription'];
             echo "</div>";
             echo "<div class=\"icon\">";
-            echo "<img src=\"images/".$row['updateType'].".png\" alt=\"".$row["updateType"]."\">";
+            echo "<img class=\"".$row['updateType']."\" alt=\"".$row["updateType"]."\">";
             echo "</div>";
             echo "<div class=\"date\">";
             echo date("d.m.Y", strtotime($row['post_date']));
@@ -166,7 +153,7 @@ require_once("dbutils.php");
 
         <button type="button"> English </button>
 
-        <button type="button" onclick="changeTheme()"> Dark/Light theme <img src="./images/Moon-Dark-Mode.svg" alt="moon"> / <img src="./images/Sun-Light-Mode.svg" alt="sun"> </button>
+        <button id="theme-button" type="button" onclick="changeTheme();"> </button>
       </div>
       <div class="footer-links">
         <div class="text">
@@ -189,4 +176,8 @@ require_once("dbutils.php");
       </div>
     </div>
   </body>
+
+  <script type="text/javascript">
+    doAll();
+  </script>
 </html>

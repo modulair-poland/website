@@ -5,7 +5,21 @@ html {
 body {
   display: grid;
   grid-template-columns: [most-left] 5% [left] 1fr [right] 5% [most-right];
-  
+
   margin: 0px;
   height: 100%;
+}
+
+.body-background {
+  grid-area: intro / most-left / most-bottom / most-right;
+  background-image: url("../images/background-geometry-shapes.svg");
+  transform: translateY(-80px);
+  background-repeat: repeat;
+  z-index: -1;
+}
+.theme-light .body-background {
+  filter: opacity(50%);
+}
+.theme-dark .body-background {
+  filter: opacity(5%);
 }

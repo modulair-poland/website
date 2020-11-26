@@ -43,3 +43,9 @@ img {
 .image-overlay > img {
   /* this is to be done */
 }
+
+/* images inside header */
+.header img {
+  height: 30px;
+  vertical-align: middle;
+}
