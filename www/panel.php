@@ -8,7 +8,7 @@ if(!isset($_SESSION['loggedin'])&&$_SESSION['loggedin']!=true)
 ?>
 
 <!DOCTYPE html>
-<html lang="en" dir="ltr" class="theme-dark">
+<html lang="en" dir="ltr" class="">
   <head>
     <meta charset="utf-8">
     <title>ModulAir</title>
