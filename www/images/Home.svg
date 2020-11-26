@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 962 764.6" style="enable-background:new 0 0 962 764.6;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{display:inline;fill:#0994DC;}
+	.st2{fill:none;stroke:#0994DC;stroke-width:38;stroke-linecap:square;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#0994DC;stroke-width:38;stroke-linecap:round;stroke-miterlimit:10;}
+</style>
+<g id="Layer_3" class="st0">
+	<path class="st1" d="M105,354.6v409.9h722V354.6H105z M794,733.7H145V383.6h649V733.7z"/>
+</g>
+<g id="Layer_2" class="st0">
+	<polygon class="st1" points="466,195.8 105,391.4 105,354.6 466,159.1 	"/>
+</g>
+<g id="Layer_4" class="st0">
+	<polygon class="st1" points="466,195.7 827,391.2 827,354.5 466,159 	"/>
+</g>
+<g id="Layer_5">
+	<path class="st2" d="M79,340.6v354.5c0,18.5,17.9,33.4,40,33.4h268l-1-306h190l-1,306h267c22.1,0,40-15,40-33.4V340.6"/>
+	<polyline class="st3" points="19,360.7 477,23.5 943,360.7 	"/>
+</g>
+</svg>
