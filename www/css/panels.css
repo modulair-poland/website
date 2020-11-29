@@ -98,5 +98,5 @@ a > .panel {
 }
 .panel-enclosure > .panel-link > .panel {
   margin: 0px;
-  border-radius: 0px;
+  border-radius: 10px;
 }

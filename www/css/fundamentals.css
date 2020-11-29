@@ -17,9 +17,10 @@ body {
   background-repeat: repeat;
   z-index: -1;
 }
+
 .theme-light .body-background {
-  filter: opacity(50%);
+  filter: saturate(0.7) opacity(0.15) contrast(0.7);
 }
 .theme-dark .body-background {
-  filter: opacity(5%);
+  filter: opacity(5%) contrast(0.8);
 }
