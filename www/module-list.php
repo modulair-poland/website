@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="./css/module-list.css">
     <script type="text/javascript" src="./scripts/change-theme.js"> </script>
+    <script type="text/javascript" src="./scripts/in-development-info.js"> </script>
     <title>ModulAir</title>
   </head>
   <body>
@@ -22,19 +23,19 @@
       <a class="home" href="index.php">
         Home
       </a>
-      <a class="get-started" href="">
+      <a class="get-started in-development">
         Get started
       </a>
       <a class="modules" href="module-list.php">
         Modules
       </a>
-      <a class="documentation" href="">
+      <a class="documentation in-development">
         Documentation
       </a>
-      <a class="app" href="">
+      <a class="app in-development">
         Application
       </a>
-      <a class="faq" href="">
+      <a class="faq in-development">
         FAQ
       </a>
       <a class="about" href="about.php">
@@ -142,7 +143,7 @@
         <div class="text">
           <a href="https://github.com/modulair-poland">GitHub</a>
           <a href="https://www.facebook.com/ModulAirTeam">Fanpage</a>
-          <a href="">FAQ</a>
+          <a class="in-development">FAQ</a>
           <a href="blog.php">Blog</a>
           <a href="about.php">About</a>
         </div>
@@ -150,10 +151,12 @@
       </div>
       <div class="footer-sponsors">
         <div class="text">
+          <!-- THIS IS TO BE ADDED ONCE WE HAVE SOME RELIABLE SPONSORS
           Sponsors
           <img src="" alt="logo1">
           <img src="" alt="logo2">
           <img src="" alt="logo3">
+          !-->
         </div>
 
       </div>
@@ -162,5 +165,6 @@
 
   <script type="text/javascript">
     doAll();
+    setPopUpListeners();
   </script>
 </html>

@@ -1,7 +1,7 @@
-const id = ["get-started", "modules", "documentation"];
+const id = ["get-started", "modules", "documentation", "my-module"];
 
-const path = ["Get-started-light.svg", "Modules-light.svg", "Documentation-light.svg"];
-const path_dark = ["Get-started-dark.svg", "Modules-dark.svg", "Documentation-dark.svg"];
+const path = ["Get-started-light.svg", "Modules-light.svg", "Documentation-light.svg", "my-module-light.png"];
+const path_dark = ["Get-started-dark.svg", "Modules-dark.svg", "Documentation-dark.svg", "my-module-dark.png"];
 
 const class_ = ["hardware", "software", "support", "outreach"];
 

@@ -8,6 +8,7 @@ require_once("dbutils.php");
     <link rel="stylesheet" href="./css/index.css">
     <script type="text/javascript" src="./scripts/change-theme.js"> </script>
     <script type="text/javascript" src="./scripts/change-image-url-theme-index.js"> </script> <!-- THE ORDER OF THESE SCRIPTS MATTERS!!!!!! (FUNCTION OVERLOADING) !-->
+    <script type="text/javascript" src="./scripts/in-development-info.js"> </script>
     <title>ModulAir</title>
   </head>
   <body>
@@ -27,19 +28,19 @@ require_once("dbutils.php");
       <a class="home" href="index.php">
         Home
       </a>
-      <a class="get-started" href="">
+      <a class="get-started in-development">
         Get started
       </a>
       <a class="modules" href="module-list.php">
         Modules
       </a>
-      <a class="documentation" href="">
+      <a class="documentation in-development">
         Documentation
       </a>
-      <a class="app" href="">
+      <a class="app in-development">
         Application
       </a>
-      <a class="faq" href="">
+      <a class="faq in-development">
         FAQ
       </a>
       <a class="about" href="about.php">
@@ -59,7 +60,7 @@ require_once("dbutils.php");
       <h1>Start Your journey with science</h1>
       <div class="panels">
         <div class="panel-enclosure">
-          <a class="panel-link" href="">
+          <a class="panel-link in-development">
             <div class="panel">
               <div class="text">
                 <h3>Get started</h3>
@@ -85,7 +86,7 @@ require_once("dbutils.php");
           </a>
         </div>
         <div class="panel-enclosure">
-          <a class="panel-link" href="">
+          <a class="panel-link in-development">
             <div class="panel">
               <div class="text">
                 <h3>Documentation</h3>
@@ -129,14 +130,14 @@ require_once("dbutils.php");
     <div class="my-module">
       <h1>My Module</h1>
       <div class="panel-enclosure">
-        <a class="panel-link" href="">
+        <a class="panel-link in-development">
           <div class="panel panel-large">
             <div class="text">
               <h3> Can't find any module that fits Your needs? </h3>
               Now you can design your own with My module kit.
             </div>
             <div class="image">
-              <img src="./images/my-module.png" alt="My module">
+              <img id="my-module" alt="My module">
             </div>
           </div>
         </a>
@@ -159,7 +160,7 @@ require_once("dbutils.php");
         <div class="text">
           <a href="https://github.com/modulair-poland">GitHub</a>
           <a href="https://www.facebook.com/ModulAirTeam">Fanpage</a>
-          <a href="">FAQ</a>
+          <a class="in-development">FAQ</a>
           <a href="blog.php">Blog</a>
           <a href="about.php">About</a>
         </div>
@@ -167,10 +168,12 @@ require_once("dbutils.php");
       </div>
       <div class="footer-sponsors">
         <div class="text">
+          <!-- THIS IS TO BE ADDED ONCE WE HAVE SOME RELIABLE SPONSORS
           Sponsors
           <img src="" alt="logo1">
           <img src="" alt="logo2">
           <img src="" alt="logo3">
+          !-->
         </div>
 
       </div>
@@ -179,5 +182,6 @@ require_once("dbutils.php");
 
   <script type="text/javascript">
     doAll();
+    setPopUpListeners();
   </script>
 </html>
