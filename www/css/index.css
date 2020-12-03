@@ -4,3 +4,8 @@
 
 @import "index-grid.css";
 @import "fancy-decorations.css";
+
+.blog {
+  margin-left: 20px;
+  font-size: 20px;
+}

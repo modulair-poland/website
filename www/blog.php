@@ -22,7 +22,7 @@ require_once("dbutils.php");
 
     <div class="header">
       <a class="logo" href="index.php">
-        ModulAir
+        ModulAir <div class="vl"></div>
       </a>
       <a class="home" href="index.php">
         Home

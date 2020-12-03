@@ -1,9 +1,16 @@
 @import "./colour-declaration.css";
 
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
+
 html {
-  font-family: Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 20px;
   color: var(--theme-text);
+}
+h1, h2, h3 {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
 }
 
 h1 {
