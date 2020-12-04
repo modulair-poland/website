@@ -57,74 +57,10 @@
         These are our modules
       </div>
       <div class="panel panel-singular">
-        <input type="text" placeholder="Search...">
+        <input type="text" placeholder="Search..." onkeyup="searchModules(this.value)">
       </div>
     </div>
-    <div class="list">
-      <div class="panel panel-list">
-        <div class="text">
-          <h3>One way (title)</h3>
-          or another, that is a pretty long description, but nevertheless it is relatively short
-        </div>
-        <div class="image">
-              image
-        </div>
-        <div class="tags">
-          tags:
-        </div>
-        <div class="price">
-          expected price:
-        </div>
-      </div>
-
-      <div class="panel panel-list">
-        <div class="text">
-          <h3>One way (title)</h3>
-          or another, that is a pretty long description, but nevertheless it is relatively short
-        </div>
-        <div class="image">
-              image
-        </div>
-        <div class="tags">
-          tags:
-        </div>
-        <div class="price">
-          expected price:
-        </div>
-      </div>
-
-      <div class="panel panel-list">
-        <div class="text">
-          <h3>One way (title)</h3>
-          or another, that is a pretty long description, but nevertheless it is relatively short
-        </div>
-        <div class="image">
-              image
-        </div>
-        <div class="tags">
-          tags:
-        </div>
-        <div class="price">
-          expected price:
-        </div>
-      </div>
-
-      <div class="panel panel-list">
-        <div class="text">
-          <h3>One way (title)</h3>
-          or another, that is a pretty long description, but nevertheless it is relatively short
-        </div>
-        <div class="image">
-              image
-        </div>
-        <div class="tags">
-          tags:
-        </div>
-        <div class="price">
-          expected price:
-        </div>
-      </div>
-
+    <div class="list" id="modulesList">  
     </div>
     <div class="my-module">
       Didn't find any module that would suit Your needs? Check out <a href="#">My module kit</a>
@@ -166,5 +102,22 @@
   <script type="text/javascript">
     doAll();
     setPopUpListeners();
+  </script>
+  <script>
+  function searchModules(str)
+  {
+    var xhttp;
+    xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function()
+    {
+      if(this.status == 200)
+      {
+        document.getElementById("modulesList").innerHTML = this.responseText;
+      }
+    };
+    xhttp.open("GET", "getmodules.php?q="+str, true);
+    xhttp.send();
+  }
+  searchModules("");
   </script>
 </html>
