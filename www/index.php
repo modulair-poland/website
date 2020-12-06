@@ -6,7 +6,6 @@ require_once("dbutils.php");
   <head>
     <meta charset="utf-8">
     <link rel="icon" href="/images/logo-no-text.svg">
-    <link rel="stylesheet" href="./css/directories.php">
     <link rel="stylesheet" href="./css/index.css">
     <script type="text/javascript" src="./scripts/change-theme.js"> </script>
     <script type="text/javascript" src="./scripts/change-image-url-theme-index.js"> </script> <!-- THE ORDER OF THESE SCRIPTS MATTERS!!!!!! (FUNCTION OVERLOADING) !-->
