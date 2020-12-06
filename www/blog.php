@@ -9,6 +9,7 @@ require_once("dbutils.php");
     <script type="text/javascript" src="./scripts/change-theme.js"> </script>
     <script type="text/javascript" src="./scripts/change-image-url-theme-blog.js"> </script> <!-- THE ORDER OF THESE SCRIPTS MATTERS!!!!!! (FUNCTION OVERLOADING) !-->
     <script type="text/javascript" src="./scripts/in-development-info.js"> </script>
+    <script type="text/javascript" src="./scripts/updates-loading.js"> </script>
     <script type="text/javascript" src="./scripts/clicky.js"> </script>
     <title>ModulAir</title>
   </head>
@@ -59,7 +60,7 @@ require_once("dbutils.php");
     <div class="updates-by-type">
       <h1>Updates by type</h1>
       <div class="panels">
-        <div class="panel-enclosure unclicked">
+        <div name="hardware" class="panel-enclosure unclicked">
           <a class="panel-link">
             <div class="panel">
               <div class="text">
@@ -71,7 +72,7 @@ require_once("dbutils.php");
             </div>
           </a>
         </div>
-        <div class="panel-enclosure unclicked">
+        <div name="software" class="panel-enclosure unclicked">
           <a class="panel-link">
             <div class="panel">
               <div class="text">
@@ -83,7 +84,7 @@ require_once("dbutils.php");
             </div>
           </a>
         </div>
-        <div class="panel-enclosure unclicked">
+        <div name="support" class="panel-enclosure unclicked">
           <a class="panel-link">
             <div class="panel">
               <div class="text">
@@ -95,7 +96,7 @@ require_once("dbutils.php");
             </div>
           </a>
         </div>
-        <div class="panel-enclosure unclicked">
+        <div name="outreach" class="panel-enclosure unclicked">
           <a class="panel-link">
             <div class="panel">
               <div class="text">
@@ -111,27 +112,7 @@ require_once("dbutils.php");
     </div>
     <div class="all-updates">
       <h1>All updates</h1>
-      <div class="list">
-        <?php
-
-        $result=easyQuery("SELECT * FROM blog ORDER BY post_date DESC, id DESC");
-        while($row = $result->fetch_assoc() )
-        {
-          echo "<div class=\"panel panel-tiny-icon\">";
-          echo "<div class=\"text\">";
-          echo "<h4>".$row['title']."</h4>";
-          echo $row['shortDescription'];
-          echo "</div>";
-          echo "<div class=\"icon\">";
-          echo "<img class=\"".$row['updateType']."\" alt=\"".$row["updateType"]."\">";
-          echo "</div>";
-          echo "<div class=\"date\">";
-          echo date("d.m.Y", strtotime($row['post_date']));
-          echo "</div> </div>";
-        }
-
-
-        ?>
+      <div id="updatesList" class="list">
         </div>
     </div>
     <div class="footer">
@@ -171,5 +152,6 @@ require_once("dbutils.php");
     doAll();
     setPopUpListeners();
     setUpClicky();
+    loadUpdates([]);
   </script>
 </html>
