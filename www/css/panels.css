@@ -95,8 +95,10 @@ a > .panel {
   margin: 10px 10px 10px 10px;
   border-radius: 10px;
   height: auto;
+  background-color: var(--theme-background);
 }
 .panel-enclosure > .panel-link > .panel {
   margin: 0px;
   border-radius: 10px;
+  background-color: transparent;
 }

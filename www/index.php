@@ -111,7 +111,7 @@ require_once("dbutils.php");
         while (($row = $result->fetch_assoc()) && $i) {
             echo "<div class=\"panel panel-tiny-icon\">";
             echo "<div class=\"text\">";
-            echo "<h3>".$row['title']."</h3>";
+            echo "<h4>".$row['title']."</h4>";
             echo $row['shortDescription'];
             echo "</div>";
             echo "<div class=\"icon\">";
