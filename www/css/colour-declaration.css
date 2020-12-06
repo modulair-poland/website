@@ -1,0 +1,53 @@
+/* THEMED COLOUR DECLARATION */
+
+.theme-dark, :root {
+  --theme-text: #cccccc;
+  --theme-text-invert: #eeeeee;
+  --theme-text-light: #5e5e5e;
+  --theme-text-light-emphasis: #7a7a7a;
+  --theme-selection: #9badc4;
+
+  --theme-background: #161616;
+
+  --theme-header-background: #1f1f1f;
+  --theme-intro-background: #023257; /*that is to be replaced with an image new : 023257 old : 003a66 */
+  --theme-list-background: #161616; /*that is to be replaced with an image*/
+  --theme-image-background: #303030; /*that is to be replaced with an image*/
+  --theme-footer-background: #0e0e0e;
+
+  --theme-search-bar-panel: #161616;
+  --theme-search-bar: #161616;
+  --theme-panel-background: #161616;
+
+  --theme-outline: #3e3e3e;
+  --theme-outline-strong: #5e5e5e;
+  --theme-shadow: #000000cc;
+
+  --theme-search-bar-border-width: 1px;
+}
+
+.theme-light {
+  --theme-text: #272727;
+  --theme-text-invert: #ffffff;
+  --theme-text-light: #5e5e5e;
+  --theme-text-light-emphasis: #4e4e4e;
+  --theme-selection: #4d9bff;
+
+  --theme-background: #ffffff;
+
+  --theme-header-background: #ffffff;
+  --theme-intro-background: #084b80; /*that is to be replaced with an image new : 084b80 old : 003a66 */
+  --theme-list-background: #f0f0f0; /*that is to be replaced with an image*/
+  --theme-image-background: #e0e0e0; /*that is to be replaced with an image*/
+  --theme-footer-background: #e0e0e0;
+
+  --theme-search-bar-panel: #e0e0e0e0;
+  --theme-search-bar: white;
+  --theme-panel-background: white;
+
+  --theme-outline: #eeeeee;
+  --theme-outline-strong: #adadad;
+  --theme-shadow: #999999cc;
+
+  --theme-search-bar-border-width: 4px;
+}

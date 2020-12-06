@@ -1,0 +1,9 @@
+
+.tag {
+  display: inline;
+  background-color: var(--theme-footer-background);
+  margin-left: 3px;
+  margin-right: 3px;
+  padding: 6px 15px 6px 15px;
+  border-radius: 20px;
+}

@@ -1,0 +1,17 @@
+@import "colour-declaration.css";
+
+/* BACKGROUND 
+.list-background {
+  background-color: var(--theme-list-background);
+}*/
+.panel {
+  background-color: var(--theme-panel-background);
+}
+
+/* TEXT */
+.search-bar {
+  color: var(--theme-text);
+}
+.list {
+  color: var(--theme-text);
+}

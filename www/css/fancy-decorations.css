@@ -1,0 +1,29 @@
+/* PANEL DECORATIONS */
+.panel {
+  box-shadow: 5px 5px 5px var(--theme-shadow);
+  border: 1px solid var(--theme-outline);
+}
+
+/* if panel is a link: */
+.panel-enclosure {
+  box-shadow: 5px 5px 5px var(--theme-shadow);
+  border: 1px solid var(--theme-outline);
+}
+.panel-enclosure > .panel-link > .panel {
+  box-shadow: none;
+  border: none;
+}
+
+.panel-singular {
+  border: var(--theme-search-bar-border-width) solid var(--theme-outline);
+}
+
+/* PANEL CONTENT DECORATIONS */
+.panel > input {
+  border: 2px solid var(--theme-outline);
+}
+.panel > input {
+  outline: none;
+}
+
+/* for clicky decorations see clicky.css */

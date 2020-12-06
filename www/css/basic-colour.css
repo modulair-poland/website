@@ -1,0 +1,45 @@
+@import "colour-declaration.css";
+
+body {
+  background-color: var(--theme-background);
+}
+::selection {
+  background: var(--theme-selection);
+}
+
+.header-background {
+  background-color: var(--theme-header-background);
+}
+.intro-background {
+  background-color: var(--theme-intro-background);
+}
+.footer-background {
+  background-color: var(--theme-footer-background);
+}
+
+.header {
+  color: var(--theme-text);
+}
+.intro {
+  color: var(--theme-text-invert);
+}
+.footer {
+  color: var(--theme-text);
+}
+
+a:link {
+  color: var(--theme-text);
+  decoration: underline;
+}
+a:visited {
+  color: var(--theme-text);
+  decoration: underline;
+}
+a:active {
+  color: var(--theme-text-light);
+  decoration: underline;
+}
+a:hover {
+  color: var(--theme-text-light);
+  decoration: underline;
+}

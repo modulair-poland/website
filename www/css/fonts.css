@@ -1,0 +1,86 @@
+@import "./colour-declaration.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
+
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: var(--theme-text);
+}
+h1, h2, h3 {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 35px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 35px;
+  font-weight: 500;
+  margin: 10px auto 5px auto;
+}
+h3 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+h4 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+
+/* INDEX.PHP */
+.getting-started > .panels {
+  color: var(--theme-text-light);
+}
+.getting-started > .panels > .panel > .text {
+  font-size: 17px;
+}
+
+.my-module > .panel {
+  color: var(--theme-text-light);
+}
+.my-module > .panel > .text {
+  font-size: 17px;
+}
+
+.blog {
+  font-size: 17px;
+}
+
+
+/* MODULE-LIST.PHP */
+.list > .panel > .tags {
+  color: var(--theme-text-light);
+}
+.list > .panel > .price {
+  color: var(--theme-text-light);
+}
+
+
+/* ABOUT.PHP */
+.text {
+  line-height: 1.6;
+  margin-bottom: 7px;
+  padding-left: 20px;
+}
+.emphasis { /* to improve and put into the text */
+  color: var(--theme-text-light-emphasis);
+  font-size: 22px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+
+/* footer */
+.footer {
+  font-size: 15px;
+}

@@ -1,9 +1,0 @@
-
-.footer-background {
-  grid-area: footer / most-left / most-bottom / most-right;
-}
-
-.footer {
-  grid-area: footer / left / most-bottom / right;
-  padding: 30px 0px 30px 0px;
-}
