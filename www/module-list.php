@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr" class="theme-light">
   <head>
     <meta charset="utf-8">
+    <link rel="icon" href="/images/logo-no-text.svg">
     <link rel="stylesheet" href="./css/module-list.css">
     <script type="text/javascript" src="./scripts/change-theme.js"> </script>
     <script type="text/javascript" src="./scripts/in-development-info.js"> </script>
@@ -60,10 +61,10 @@
         <input type="text" placeholder="Search..." onkeyup="searchModules(this.value)">
       </div>
     </div>
-    <div class="list" id="modulesList">  
+    <div class="list" id="modulesList">
     </div>
     <div class="my-module">
-      Didn't find any module that would suit Your needs? Check out <a href="#">My module kit</a>
+      Didn't find any module that would suit Your needs? Check out <a class="in-development">My module kit</a>
       to help You create Your own.
     </div>
     <div class="footer">
