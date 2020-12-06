@@ -11,7 +11,7 @@
 }
 .panel-enclosure > .panel-link > .panel {
   box-shadow: none;
-  border: none; 
+  border: none;
 }
 
 .panel-singular {
@@ -25,3 +25,5 @@
 .panel > input {
   outline: none;
 }
+
+/* for clicky decorations see clicky.css */

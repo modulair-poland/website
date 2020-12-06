@@ -9,6 +9,7 @@ require_once("dbutils.php");
     <script type="text/javascript" src="./scripts/change-theme.js"> </script>
     <script type="text/javascript" src="./scripts/change-image-url-theme-blog.js"> </script> <!-- THE ORDER OF THESE SCRIPTS MATTERS!!!!!! (FUNCTION OVERLOADING) !-->
     <script type="text/javascript" src="./scripts/in-development-info.js"> </script>
+    <script type="text/javascript" src="./scripts/clicky.js"> </script>
     <title>ModulAir</title>
   </head>
   <body>
@@ -58,8 +59,8 @@ require_once("dbutils.php");
     <div class="updates-by-type">
       <h1>Updates by type</h1>
       <div class="panels">
-        <div class="panel-enclosure">
-          <a class="panel-link in-development">
+        <div class="panel-enclosure unclicked">
+          <a class="panel-link">
             <div class="panel">
               <div class="text">
                 <h3>Hardware</h3>
@@ -70,8 +71,8 @@ require_once("dbutils.php");
             </div>
           </a>
         </div>
-        <div class="panel-enclosure">
-          <a class="panel-link in-development">
+        <div class="panel-enclosure unclicked">
+          <a class="panel-link">
             <div class="panel">
               <div class="text">
                 <h3>Software</h3>
@@ -82,8 +83,8 @@ require_once("dbutils.php");
             </div>
           </a>
         </div>
-        <div class="panel-enclosure">
-          <a class="panel-link in-development">
+        <div class="panel-enclosure unclicked">
+          <a class="panel-link">
             <div class="panel">
               <div class="text">
                 <h3>Support</h3>
@@ -94,8 +95,8 @@ require_once("dbutils.php");
             </div>
           </a>
         </div>
-        <div class="panel-enclosure">
-          <a class="panel-link in-development">
+        <div class="panel-enclosure unclicked">
+          <a class="panel-link">
             <div class="panel">
               <div class="text">
                 <h3>Outreach</h3>
@@ -118,7 +119,7 @@ require_once("dbutils.php");
         {
           echo "<div class=\"panel panel-tiny-icon\">";
           echo "<div class=\"text\">";
-          echo "<h3>".$row['title']."</h3>";
+          echo "<h4>".$row['title']."</h4>";
           echo $row['shortDescription'];
           echo "</div>";
           echo "<div class=\"icon\">";
@@ -169,5 +170,6 @@ require_once("dbutils.php");
   <script type="text/javascript">
     doAll();
     setPopUpListeners();
+    setUpClicky();
   </script>
 </html>

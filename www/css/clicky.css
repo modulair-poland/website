@@ -1,0 +1,13 @@
+.unclicked {
+  cursor: pointer;
+
+  box-shadow: 5px 5px 5px var(--theme-shadow);
+  transition: box-shadow 0.5s;
+}
+
+.clicked {
+  cursor: pointer;
+  
+  box-shadow: none;
+  transition: box-shadow 0.3s ease-in-out;
+}
