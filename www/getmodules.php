@@ -11,7 +11,7 @@ while($row = $result->fetch_assoc())
     echo $row['shortDescription'];
     echo "</div>";
     echo "<div class=\"image\">";
-    echo "<img src=\"images/modules/".$row['image'].".png\" alt=\"module image\">";
+    echo "<img src=\"images/modules/".$row['image']."\" alt=\"module image\">";
     echo "</div>";
     echo "<div class=\"tags\">";
     echo "tags:";

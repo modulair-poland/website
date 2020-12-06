@@ -17,5 +17,6 @@ if(!isset($_SESSION['loggedin'])&&$_SESSION['loggedin']!=true)
 <a href="logout.php"> Log out</a>
 <a href="index.php"> Home</a>
 <a href="newblogpost.php"> New Blog Post </a>
+<a href="newmodule.php"> New Module </a>
   </body>
 </html>
