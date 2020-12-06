@@ -1,11 +1,12 @@
 <?php
+require_once("version.php");
 require_once("dbutils.php");
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="theme-light">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="./css/blog.css">
+    <link rel="stylesheet" href="./css/blog.css?v=<?php echo $version; ?>">
     <script type="text/javascript" src="./scripts/change-theme.js"> </script>
     <script type="text/javascript" src="./scripts/change-image-url-theme-blog.js"> </script> <!-- THE ORDER OF THESE SCRIPTS MATTERS!!!!!! (FUNCTION OVERLOADING) !-->
     <script type="text/javascript" src="./scripts/in-development-info.js"> </script>
