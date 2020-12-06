@@ -1,11 +1,9 @@
-<?php
-require_once("version.php");
-?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="theme-light">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="./css/about.css?v=<?php echo $version; ?>">
+    <link rel="icon" href="/images/logo-no-text.svg">
+    <link rel="stylesheet" href="./css/about.css">
     <script type="text/javascript" src="./scripts/change-theme.js"> </script>
     <script type="text/javascript" src="./scripts/in-development-info.js"> </script>
     <title>ModulAir</title>

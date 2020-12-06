@@ -1,7 +1,7 @@
 /* THEMED COLOUR DECLARATION */
 
 .theme-dark, :root {
-  --theme-text: #cccccc; /*cccccc*/
+  --theme-text: #cccccc;
   --theme-text-invert: #eeeeee;
   --theme-text-light: #5e5e5e;
   --theme-text-light-emphasis: #7a7a7a;
@@ -9,7 +9,7 @@
 
   --theme-background: #161616;
 
-  --theme-header-background: #1f1f1f; /*1f1f1f*/
+  --theme-header-background: #1f1f1f;
   --theme-intro-background: #023257; /*that is to be replaced with an image new : 023257 old : 003a66 */
   --theme-list-background: #161616; /*that is to be replaced with an image*/
   --theme-image-background: #303030; /*that is to be replaced with an image*/
