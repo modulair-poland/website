@@ -18,6 +18,7 @@ function loadUpdates(what){
         if(this.status == 200)
         {
           document.getElementById("updatesList").innerHTML = this.responseText;
+          changeImageSource();
         }
       };
       xhttp.open("GET", "getupdates.php?q="+str, true);

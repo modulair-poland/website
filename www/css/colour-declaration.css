@@ -20,7 +20,8 @@
   --theme-panel-background: #161616;
 
   --theme-outline: #3e3e3e;
-  --theme-shadow: #111111cc;
+  --theme-outline-strong: #5e5e5e;
+  --theme-shadow: #000000cc;
 
   --theme-search-bar-border-width: 1px;
 }
@@ -45,6 +46,7 @@
   --theme-panel-background: white;
 
   --theme-outline: #eeeeee;
+  --theme-outline-strong: #adadad;
   --theme-shadow: #999999cc;
 
   --theme-search-bar-border-width: 4px;

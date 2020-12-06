@@ -16,7 +16,10 @@ body {
   background-image: url("../images/background-geometry-shapes.svg");
   transform: translateY(-80px);
   background-repeat: repeat;
+
   z-index: -1;
+  background-size: 80%;
+  overflow: visible;
 }
 
 .theme-light .body-background {

@@ -1,13 +1,17 @@
 .unclicked {
   cursor: pointer;
 
-  box-shadow: 5px 5px 5px var(--theme-shadow);
+  box-shadow: 15px 15px 15px var(--theme-shadow);
   transition: box-shadow 0.5s;
+
+  border: solid 1px var(--theme-outline);
 }
 
 .clicked {
   cursor: pointer;
-  
+
   box-shadow: none;
   transition: box-shadow 0.3s ease-in-out;
+
+  border: solid 1px var(--theme-outline-strong);
 }

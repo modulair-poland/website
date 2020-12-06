@@ -17,7 +17,6 @@ function changeImageSource() {
       let el = document.getElementsByClassName(class_[i]);
       for(let j = 0; j < el.length; j++) {
         el[j].src = "./images/" + path[i];
-
       }
     }
   }

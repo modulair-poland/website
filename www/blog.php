@@ -58,7 +58,7 @@ require_once("dbutils.php");
       </div>
     </div>
     <div class="updates-by-type">
-      <h1>Updates by type</h1>
+      <h1>Select from type</h1>
       <div class="panels">
         <div name="hardware" class="panel-enclosure unclicked">
           <a class="panel-link">
@@ -111,9 +111,9 @@ require_once("dbutils.php");
       </div>
     </div>
     <div class="all-updates">
-      <h1>All updates</h1>
+      <h1>Updates</h1>
       <div id="updatesList" class="list">
-        </div>
+      </div>
     </div>
     <div class="footer">
       <div class="footer-buttons">
