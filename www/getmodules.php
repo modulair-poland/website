@@ -1,7 +1,7 @@
 <?php
 require_once("dbutils.php");
 $q = $_REQUEST["q"];
-$result = easyQuery("SELECT * FROM modules WHERE moduleName LIKE ? OR shortDescription LIKE ?", "ss", "%".$q."%", "%".$q."%");
+$result = easyQuery("SELECT * FROM modules WHERE moduleName LIKE ? OR shortDescription LIKE ? OR tags LIKE ?", "sss", "%".$q."%", "%".$q."%", "%".$q."%");
 while($row = $result->fetch_assoc())
 {
 
