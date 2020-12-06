@@ -14,5 +14,5 @@ function setPopUpListeners() {
 }
 
 function PopUp() {
-  alert("This site is still in development. We are sorry for inconveniences");
+  alert("This site is still in development. We are sorry for the inconvenience.");
 }
