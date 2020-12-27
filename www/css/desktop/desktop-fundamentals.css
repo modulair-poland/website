@@ -1,0 +1,40 @@
+@media only screen and (min-width: 600px) {
+  html {
+    height: 100%;
+  }
+
+  body {
+    display: grid;
+    grid-template-columns: [most-left] 5% [left] 1fr [right] 5% [most-right];
+
+    margin: 0px;
+    height: 100%;
+  }
+
+  .body-background {
+    grid-area: intro / most-left / most-bottom / most-right;
+    background-image: url("../../images/background-geometry-shapes.svg");
+    transform: translateY(-80px);
+    background-repeat: repeat;
+
+    z-index: -1;
+    background-size: 75%;
+    overflow: visible;
+  }
+
+  .theme-light .body-background {
+    filter: saturate(0.7) opacity(0.2) contrast(0.7);
+  }
+  .theme-dark .body-background {
+    filter: opacity(5%) contrast(0.8);
+  }
+
+
+  .vl {
+    display: inline;
+    height: 100%;
+    border-left: solid 2px var(--theme-text-light);
+    margin-left: 15%;
+  }
+
+}

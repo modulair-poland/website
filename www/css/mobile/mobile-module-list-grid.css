@@ -1,0 +1,59 @@
+@media only screen and (max-width: 600px) {
+
+  body {
+    grid-template-rows: [header] 55px [intro] 350px [search-bar] auto [list] auto [my-module] auto [footer] auto [most-bottom];
+  }
+
+  /* background layout */
+  .intro-background {
+    grid-area: intro / most-left / search-bar / most-right;
+  }
+  .search-bar-background {
+    grid-area: search-bar / most-left / list / most-right;
+  }
+  .list-background {
+    grid-area: list / most-left / my-module / most-right;
+  }
+  .my-module-background {
+    grid-area: my-module / most-left / footer / most-right;
+  }
+
+  /* main content container layout */
+  .intro {
+    grid-area: intro / left / search-bar / right;
+    padding: 40px 0px 30px 0px;
+  }
+  .search-bar {
+    grid-area: search-bar / left / list / right;
+    padding: 30px 0px 30px 0px;
+  }
+  .list {
+    grid-area: list / left / my-module / right;
+    padding: 30px 0px 30px 0px;
+  }
+  .my-module {
+    grid-area: my-module / left / footer / right;
+    padding: 30px 0px 30px 0px;
+  }
+
+  /* subcontainer layout:*/
+  .search-bar > .panel {
+    width: 60%;
+    margin: auto;
+  }
+  .search-bar input {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 6px;
+    border: none;
+    font-size: 17px;
+
+    background-color: var(--theme-search-bar);
+    color: var(--theme-text);
+  }
+
+}

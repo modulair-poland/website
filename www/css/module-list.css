@@ -1,8 +1,12 @@
-@import "images.css";
-@import "fonts.css";
+/* COLOURS */
 @import "basic-colour.css";
 @import "module-list-colour.css";
-
+/* IMAGES AND FONTS */
+@import "images.css";
+@import "fonts.css";
+/* GRID */
+@import "basic-grid.css";
 @import "module-list-grid.css";
+/* DECORATIONS */
 @import "tags.css";
 @import "fancy-decorations.css";

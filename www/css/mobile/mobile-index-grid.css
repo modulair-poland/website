@@ -1,0 +1,64 @@
+@media only screen and (max-width: 600px) {
+
+  body {
+    grid-template-rows: [header] 55px [intro] 350px [getting-started] auto [latest-updates] auto [blog] auto [my-module] auto [footer] auto [most-bottom];
+  }
+
+  /* background layout */
+  .intro-background {
+    grid-area: intro / most-left / getting-started / most-right;
+  }
+  .getting-started-background {
+    grid-area: getting-started / most-left / latest-updates / most-right;
+  }
+  .latest-updates-background {
+    grid-area: latest-updates / most-left / blog / most-right;
+  }
+  .blog-background {
+    grid-area: blog / most-left / my-module / most-right;
+  }
+  .my-module-background {
+    grid-area: my-module / most-left / footer / most-right;
+  }
+
+
+  /* main content container layout */
+  .intro {
+    grid-area: intro / left / getting-started / right;
+    padding: 40px 0px 30px 0px;
+  }
+  .getting-started {
+    grid-area: getting-started / left / latest-updates / right;
+    padding: 30px 0px 30px 0px;
+  }
+  .latest-updates {
+    grid-area: latest-updates / left / blog / right;
+    padding: 20px 0px 30px 0px;
+  }
+  .blog {
+    grid-area: blog / left / my-module / right;
+    padding: 10px 0px 30px 0px;
+  }
+  .my-module {
+    grid-area: my-module / left / footer / right;
+    padding: 30px 0px 30px 0px;
+  }
+
+
+  /* subcontainer layout:*/
+
+
+  /* getting started */
+  .getting-started > .panels {
+    display: grid;
+    grid-template-columns: [panel1] 1fr [panel2] 1fr [panel3] 1fr [right];
+    grid-template-rows: [top] auto [bottom];
+  }
+  .getting-started > .panels > .panel-enclosure > .panel-link > .panel > .text {
+    padding: 0px 20px 15px 20px;
+  }
+  .my-module > .panel > .text {
+    padding: 20px 30px 20px 20px;
+  }
+
+}

@@ -1,0 +1,55 @@
+@media only screen and (min-width: 600px) {
+
+  /* an image */
+  .image {
+    padding: 0px;
+    border: 0px;
+    /*background-color: var(--theme-image-background);*/
+  }
+  .image > img {
+    width: 70%;
+  }
+
+  .intro-image {
+    background-color: transparent;
+  }
+  .intro-image > img {
+    height: 90%;
+    float: right;
+  }
+
+  img {
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
+
+  /* an icon */
+  .icon {
+    margin: auto;
+    height: auto;
+  }
+  .icon > img {
+    height: 65px;
+  }
+
+  /* large image overlay : : TODO and to be put in blog.php */
+  .image-overlay {
+    /* this is to be done */
+    position: relative;
+    overflow: hidden;
+  }
+  .image-overlay > img {
+    /* this is to be done */
+  }
+
+  /* images inside header */
+  .header img {
+    height: 30px;
+    vertical-align: middle;
+  }
+
+}

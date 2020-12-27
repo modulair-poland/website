@@ -1,0 +1,13 @@
+@media only screen and (max-width: 600px) {
+  .intro {
+
+    display: grid;
+    grid-template-columns: [text] auto [image] auto [right];
+    grid-template-rows: [top] auto [bottom];
+  }
+
+  .intro > .text {
+    letter-spacing: 2px;
+  }
+
+}

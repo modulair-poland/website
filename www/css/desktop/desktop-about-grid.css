@@ -1,0 +1,62 @@
+@media only screen and (min-width: 600px) {
+
+  body {
+    grid-template-rows: [header] 55px [intro] 350px [who-we-are] auto [cansat-contest] auto [our-sponsors] auto [special-thanks] auto [footer] auto [most-bottom];
+  }
+
+  /* background layout */
+  .intro-background {
+    grid-area: intro / most-left / who-we-are / most-right;
+  }
+  .who-we-are-background {
+    grid-area: who-we-are / most-left / cansat-contest / most-right;
+  }
+  .cansat-contest-background {
+    grid-area: cansat-contest / most-left / our-sponsors / most-right;
+  }
+  .our-sponsors-background {
+    grid-area: our-sponsors / most-left / special-thanks / most-right;
+  }
+  .special-thanks-background {
+    grid-area: special-thanks / most-left / footer / most-right;
+  }
+
+  /* main content container layout */
+  .intro {
+    grid-area: intro / left / who-we-are / right;
+    padding: 40px 0px 30px 0px;
+  }
+  .who-we-are {
+    grid-area: who-we-are / left / cansat-contest / right;
+    padding: 30px 0px 10px 0px;
+  }
+  .cansat-contest {
+    grid-area: cansat-contest / left / our-sponsors / right;
+    padding: 20px 0px 10px 0px;
+  }
+  .our-sponsors {
+    grid-area: our-sponsors / left / special-thanks / right;
+    padding: 20px 0px 30px 0px;
+  }
+  .special-thanks {
+    grid-area: special-thanks / left / footer / right;
+    padding: 20px 0px 30px 0px;
+  }
+
+  /* subcontainer layout:*/
+
+
+  /* getting started */
+  .getting-started > .panels {
+    display: grid;
+    grid-template-columns: [panel1] 1fr [panel2] 1fr [panel3] 1fr [right];
+    grid-template-rows: [top] auto [bottom];
+  }
+  .getting-started > .panels > .panel-enclosure > .panel-link > .panel > .text {
+    padding: 0px 20px 15px 20px;
+  }
+  .my-module > .panel > .text {
+    padding: 20px 30px 20px 20px;
+  }
+
+}

@@ -1,0 +1,107 @@
+/* NOTE: every panel needs to have a class "panel" to have necessary decorations
+if you want to create a specific type of panel, first declare "panel" class and then the class
+you are creating,
+e.g. class="panel panel-singular"
+ */
+
+@media only screen and (max-width: 600px) {
+  /* panel with text on the left and image/icon on the right - BASIC */
+  .panel {
+    display: grid;
+    grid-template-columns: [text] 1fr [photo] 35% [right];
+    grid-template-rows: [top] auto [bottom];
+    margin: 10px 10px 10px 10px;
+    border-radius: 10px;
+    color: var(--theme-text-light);
+    background-color: var(--theme-background);
+  }
+  .panel > .text {
+    padding: 0px 20px 30px 20px;
+    line-height: 1.2;
+  }
+
+  /* panel only with content (no grid) */
+  .panel-singular {
+    display: block;
+    margin: 10px 10px 10px 10px;
+    border-radius: 10px;
+    height: auto;
+  }
+
+  /* a panel with a large photo */
+  .panel-large {
+    grid-template-columns: [text] 1fr [photo] 40% [right];
+  }
+
+  /* panel with text, tags and price on the left and image on the right */
+  .panel-list {
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: [text] 1fr [text-mid] 1fr [photo] 20% [right];
+    grid-template-rows: [top] auto [additional] auto [bottom];
+    margin: 10px 10px 30px 10px;
+    padding: 15px 15px 15px 15px;
+    border-radius: 10px;
+
+    min-height: 200px;
+  }
+  .panel-list > .text {
+    grid-area: top / text / additional / photo;
+  }
+  .panel-list > .tags {
+    grid-area: additional / text / bottom / text-mid;
+    align-self: end;
+  }
+  .panel-list > .price {
+    grid-area: additional / text-mid / bottom / photo;
+    align-self: end;
+  }
+  .panel-list > .image {
+    grid-area: top / photo / bottom / right;
+  }
+
+
+  /* panel with a small icon */
+  .panel-tiny-icon {
+    grid-template-columns: [text] 1fr [photo] 20% [right];
+    grid-template-rows: [top] auto [bottom] auto [most-bottom];
+  }
+  .image-overlay {
+    grid-area: top / text / bottom / right;
+    justify-self: right;
+  }
+  .panel-tiny-icon > .text {
+    grid-area: top / text / bottom / photo;
+    padding-bottom: 10px;
+  }
+  .panel-tiny-icon > .icon {
+    grid-area: top / photo / most-bottom / right;
+  }
+  .panel-tiny-icon > .date {
+    justify-self: end;
+    padding-bottom: 15px;
+  }
+
+  /* a link that is enclosing an entire panel */
+  a > .panel {
+    height: 100%;
+  }
+  .panel-link:active, .panel-link:visited, .panel-link:hover, .panel-link:link {
+    text-decoration: none;
+  }
+
+  /* panel eclosure (used with links) */
+  .panel-enclosure {
+    margin: 10px 10px 10px 10px;
+    border-radius: 10px;
+    height: auto;
+    background-color: var(--theme-background);
+  }
+  .panel-enclosure > .panel-link > .panel {
+    margin: 0px;
+    border-radius: 10px;
+    background-color: transparent;
+  }
+
+}

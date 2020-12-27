@@ -1,0 +1,29 @@
+/* HEADER / NAVIGATION BAR */
+@media only screen and (max-width: 600px) {
+  /* grid */
+  .header-background {
+    grid-area: header / most-left / intro / most-right;
+  }
+  .header {
+    grid-area: header / left / intro / right;
+
+    display: grid;
+    grid-template-columns: [logo] 150px [home] auto [get-started] auto [modules] auto [documentation] 1fr [app] auto [faq] auto [about] auto [right] auto [most-right];
+    grid-template-rows: [top] 1fr [bottom];
+
+  }
+  /* header elements */
+  .header > a {
+    margin: auto 20px auto 20px;
+    white-space: nowrap; /* makes the vertical line inside not wrap to the next line in FIREFOX BROWSER */
+  }
+
+  .header > a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+  }
+
+  .logo {
+    letter-spacing: 2px;
+    font-size: 23px;
+  }
+}

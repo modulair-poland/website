@@ -1,10 +1,2 @@
-.intro {
-
-  display: grid;
-  grid-template-columns: [text] auto [image] auto [right];
-  grid-template-rows: [top] auto [bottom];
-}
-
-.intro > .text {
-  letter-spacing: 2px;
-}
+@import "./mobile/mobile-intro.css";
+@import "./desktop/desktop-intro.css";

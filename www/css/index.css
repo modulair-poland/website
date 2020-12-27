@@ -1,8 +1,12 @@
+/* COLOURS */
+@import "basic-colour.css";
+/* IMAGES AND FONTS */
 @import "images.css";
 @import "fonts.css";
-@import "basic-colour.css";
-
+/* GRID */
+@import "basic-grid.css";
 @import "index-grid.css";
+/* DECORATIONS */
 @import "fancy-decorations.css";
 
 .blog {

@@ -1,9 +1,4 @@
-@import "colour-declaration.css";
 
-/* BACKGROUND 
-.list-background {
-  background-color: var(--theme-list-background);
-}*/
 .panel {
   background-color: var(--theme-panel-background);
 }

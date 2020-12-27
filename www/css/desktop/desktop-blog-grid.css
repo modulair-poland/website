@@ -1,0 +1,40 @@
+@media only screen and (min-width: 600px) {
+
+  body {
+    grid-template-rows: [header] 55px [intro] 350px [updates-by-type] auto [all-updates] auto [footer] auto [most-bottom];
+  }
+
+  /* background layout */
+  .intro-background {
+    grid-area: intro / most-left / updates-by-type / most-right;
+  }
+  .updates-by-type-background {
+    grid-area: updates-by-type / most-left / all-updates / most-right;
+  }
+  .all-updates-background {
+    grid-area: all-updates / most-left / footer / most-right;
+  }
+
+  /* main content container layout */
+  .intro {
+    grid-area: intro / left / updates-by-type / right;
+    padding: 40px 0px 30px 0px;
+  }
+  .updates-by-type {
+    grid-area: updates-by-type / left / all-updates / right;
+    padding: 40px 0px 30px 0px;
+  }
+  .all-updates {
+    grid-area: all-updates / left / footer / right;
+    padding: 40px 0px 30px 0px;
+  }
+
+
+  /* subcontainer layout:*/
+  .panels {
+    display: grid;
+    grid-template-columns: [panel1] auto [panel2] auto [panel3] auto [panel4] auto [right];
+    grid-template-rows: [top] auto [bottom];
+  }
+
+}
