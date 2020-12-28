@@ -7,8 +7,9 @@ e.g. class="panel panel-singular"
 @media only screen and (max-width: 600px) {
   /* panel with text on the left and image/icon on the right - BASIC */
   .panel {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-rows: [top] auto [bottom];
+    grid-template-columns: [left] 1fr [icon] 35% [right];
 
     margin: 10px 10px 10px 10px;
     border-radius: 10px;
@@ -16,16 +17,13 @@ e.g. class="panel panel-singular"
     background-color: var(--theme-background);
   }
   .panel > .text {
-    order: 1;
-    flex-grow: 1;
+    grid-column-start: left;
 
     padding: 0px 20px 30px 20px;
     line-height: 1.2;
   }
   .panel > .icon {
-    order: 2;
-
-    width: 35%;
+    grid-column-start: icon;
   }
 
   /* panel only with content (no grid) */
@@ -37,10 +35,14 @@ e.g. class="panel panel-singular"
   }
 
   /* a panel with a large photo */
+  .panel-large {
+    grid-template-columns: [left] 1fr [image] 40% [right];
+  }
+  .panel-large > .text {
+    grid-column-start: left;
+  }
   .panel-large > .image {
-    order: 2;
-
-    width: 40%;
+    grid-column-start: image;
   }
 
   /* panel with text, tags and price on the left and image on the right */
