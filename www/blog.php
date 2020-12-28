@@ -30,12 +30,14 @@ require_once("dbutils.php");
         <h1>Official blog</h1>
         and updates
       </div>
-      <div class="intro-image">
+      <div class="intro-image desktop-only">
         <img src="images/logo.svg" alt="no image found">
       </div>
     </div>
     <div class="updates-by-type">
-      <h1>Select from type</h1>
+      <h1 class="desktop-only">Select from type</h1>
+      <h1 class="mobile-only">Select type</h1>
+
       <div class="panels">
         <div name="hardware" class="panel-enclosure unclicked">
           <a class="panel-link">
@@ -88,7 +90,7 @@ require_once("dbutils.php");
       </div>
     </div>
     <div class="all-updates">
-      <h1>Updates</h1>
+      <h1 class="desktop-only">Updates</h1>
       <div id="updatesList" class="list">
       </div>
     </div>

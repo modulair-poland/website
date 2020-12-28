@@ -27,7 +27,7 @@ require_once("dbutils.php");
 
     <div class="intro">
       <div class="text">
-        <h1>ModulAir</h1>
+        <h1 class="desktop-only">ModulAir</h1>
         The main website of the greatest CanSat project ever made
       </div>
       <div class="intro-image">

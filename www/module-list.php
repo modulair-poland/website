@@ -24,13 +24,13 @@
         <h1>Modules</h1>
         a complete list
       </div>
-      <div class="intro-image">
+      <div class="intro-image desktop-only">
         <img src="images/logo.svg" alt="no image found">
       </div>
     </div>
     <div class="search-bar">
       <h1>A complete list of modules provided by ModulAir</h1>
-      <div class="text">
+      <div class="text desktop-only">
         These are our modules
       </div>
       <div class="panel panel-singular">

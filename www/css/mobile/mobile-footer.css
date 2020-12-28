@@ -10,10 +10,13 @@
   }
 
   .footer {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /*
     grid-template-columns: [left] auto [middle] auto [right];
     grid-template-rows: [top] auto [middle] auto [bottom];
-
+*/
     padding: 50px 20px 50px 20px;
 
     letter-spacing: 1px;

@@ -32,7 +32,7 @@
   }
 
   .theme-light .body-background {
-    filter: saturate(0.7) opacity(0.2) contrast(0.7);
+    filter: saturate(0.7) opacity(0.3) contrast(0.7);
   }
   .theme-dark .body-background {
     filter: opacity(5%) contrast(0.8);

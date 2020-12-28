@@ -1,7 +1,7 @@
 @media only screen and (max-width: 600px) {
 
   body {
-    grid-template-rows: [header] 55px [intro] 350px [who-we-are] auto [cansat-contest] auto [our-sponsors] auto [special-thanks] auto [footer] auto [most-bottom];
+    grid-template-rows: [header] 55px [intro] 140px [who-we-are] auto [cansat-contest] auto [our-sponsors] auto [special-thanks] auto [footer] auto [most-bottom];
   }
 
   /* background layout */
@@ -24,23 +24,22 @@
   /* main content container layout */
   .intro {
     grid-area: intro / left / who-we-are / right;
-    padding: 40px 0px 30px 0px;
   }
   .who-we-are {
     grid-area: who-we-are / left / cansat-contest / right;
-    padding: 30px 0px 10px 0px;
+    padding: 15px 0px 5px 0px;
   }
   .cansat-contest {
     grid-area: cansat-contest / left / our-sponsors / right;
-    padding: 20px 0px 10px 0px;
+    padding: 10px 0px 5px 0px;
   }
   .our-sponsors {
     grid-area: our-sponsors / left / special-thanks / right;
-    padding: 20px 0px 30px 0px;
+    padding: 10px 0px 15px 0px;
   }
   .special-thanks {
     grid-area: special-thanks / left / footer / right;
-    padding: 20px 0px 30px 0px;
+    padding: 10px 0px 15px 0px;
   }
 
 }

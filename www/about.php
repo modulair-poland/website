@@ -24,7 +24,7 @@
         <h1>About us</h1>
         Team, contest, and sponsors
       </div>
-      <div class="intro-image">
+      <div class="intro-image desktop-only">
         <img src="images/logo.svg" alt="no image found">
       </div>
     </div>

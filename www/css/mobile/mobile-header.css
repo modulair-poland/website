@@ -40,6 +40,14 @@
     letter-spacing: 2px;
     font-size: 23px;
   }
+  .logo > .logo-small {
+    display: inline;
+    padding-right: 0px;
+    padding-left: 10px;
+  }
+  .logo > .logo-small > img {
+    height: 30px;
+  }
   .header > .more {
     grid-area: top / button / bottom / after-button;
 

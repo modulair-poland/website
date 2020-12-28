@@ -8,8 +8,8 @@ e.g. class="panel panel-singular"
   /* panel with text on the left and image/icon on the right - BASIC */
   .panel {
     display: grid;
-    grid-template-rows: [top] auto [bottom];
-    grid-template-columns: [left] 1fr [icon] 35% [right];
+    grid-template-columns: [left] auto [right];
+    grid-template-rows: [top] 35% [text] 1fr [bottom];
 
     margin: 10px 10px 10px 10px;
     border-radius: 10px;
@@ -17,13 +17,13 @@ e.g. class="panel panel-singular"
     background-color: var(--theme-background);
   }
   .panel > .text {
-    grid-column-start: left;
+    grid-row-start: text;
 
     padding: 0px 20px 30px 20px;
     line-height: 1.2;
   }
   .panel > .icon {
-    grid-column-start: icon;
+    grid-row-start: top;
   }
 
   /* panel only with content (no grid) */
@@ -36,13 +36,14 @@ e.g. class="panel panel-singular"
 
   /* a panel with a large photo */
   .panel-large {
-    grid-template-columns: [left] 1fr [image] 40% [right];
+    grid-template-rows: [top] 60% [text] 1fr [bottom];
   }
   .panel-large > .text {
-    grid-column-start: left;
+    grid-row-start: text;
   }
   .panel-large > .image {
-    grid-column-start: image;
+    grid-row-start: top;
+
   }
 
   /* panel with text, tags and price on the left and image on the right */

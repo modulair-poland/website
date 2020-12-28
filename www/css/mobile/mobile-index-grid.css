@@ -1,7 +1,7 @@
 @media only screen and (max-width: 600px) {
 
   body {
-    grid-template-rows: [header] 55px [intro] 350px [getting-started] auto [latest-updates] auto [blog] auto [my-module] auto [footer] auto [most-bottom];
+    grid-template-rows: [header] 55px [intro] 250px [getting-started] auto [latest-updates] auto [blog] auto [my-module] auto [footer] auto [most-bottom];
   }
 
   /* background layout */
@@ -25,23 +25,22 @@
   /* main content container layout */
   .intro {
     grid-area: intro / left / getting-started / right;
-    padding: 40px 0px 30px 0px;
   }
   .getting-started {
     grid-area: getting-started / left / latest-updates / right;
-    padding: 30px 0px 30px 0px;
+    padding: 15px 0px 15px 0px;
   }
   .latest-updates {
     grid-area: latest-updates / left / blog / right;
-    padding: 20px 0px 30px 0px;
+    padding: 10px 0px 15px 0px;
   }
   .blog {
     grid-area: blog / left / my-module / right;
-    padding: 10px 0px 30px 0px;
+    padding: 10px 0px 15px 0px;
   }
   .my-module {
     grid-area: my-module / left / footer / right;
-    padding: 30px 0px 30px 0px;
+    padding: 15px 0px 15px 0px;
   }
 
 
@@ -51,12 +50,27 @@
   /* getting started */
   .getting-started > .panels {
     display: grid;
-    grid-template-columns: [panel1] 1fr [panel2] 1fr [panel3] 1fr [right];
-    grid-template-rows: [top] auto [bottom];
+    grid-template-rows: [panel1] 33% [panel2] 33% [panel3] 33% [bottom];
+    grid-template-columns: [left] auto [right];
   }
   .getting-started > .panels > .panel-enclosure > .panel-link > .panel > .text {
     padding: 0px 20px 15px 20px;
   }
+  .getting-started .panel {
+    padding-top: 10px;
+  }
+  .getting-started .panel > .text > h3 {
+    padding-top: 10px;
+    padding-bottom: 0px;
+    margin: 0;
+  }
+  .getting-started .panel > .text {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 0;
+  }
+
+
   .my-module > .panel > .text {
     padding: 20px 30px 20px 20px;
   }
