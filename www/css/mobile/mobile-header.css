@@ -2,13 +2,25 @@
 @media only screen and (max-width: 600px) {
   /* grid */
   .header-background {
-    grid-area: header / most-left / intro / most-right;
+    /*grid-area: header / most-left / intro / most-right;*/
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 55px;
   }
   .header {
-    grid-area: header / left / intro / right;
+    /*grid-area: header / left / intro / right;*/
+
+    position: fixed;
+    top: 0;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    height: 55px;
 
     display: grid;
-    grid-template-columns: [logo] 150px [home] auto [get-started] auto [modules] auto [documentation] 1fr [app] auto [faq] auto [about] auto [right] auto [most-right];
+    grid-template-columns: [button] auto [after-button] 1fr [logo] auto [right] auto [most-right];
     grid-template-rows: [top] 1fr [bottom];
 
   }
@@ -22,8 +34,47 @@
     text-decoration: none;
   }
 
-  .logo {
+  .header > .logo {
+    grid-area: top / logo / bottom / right;
+
     letter-spacing: 2px;
     font-size: 23px;
+  }
+  .header > .more {
+    grid-area: top / button / bottom / after-button;
+
+    cursor: pointer;
+
+    margin-left: 0px;
+    font-size: 30px;
+  }
+
+
+  /* SIDE NAV-BAR */
+  .side-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--theme-side-nav-background);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  .side-nav a {
+    text-decoration: none;
+    display: block;
+    padding-bottom: 20px;
+    margin-left: 20px;
+    font-size: 25px;
+  }
+  .side-nav > .close-button {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 40px;
+    margin-left: 40px;
   }
 }

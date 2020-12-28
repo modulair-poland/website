@@ -14,6 +14,7 @@
   --theme-list-background: #161616; /*that is to be replaced with an image*/
   --theme-image-background: #303030; /*that is to be replaced with an image*/
   --theme-footer-background: #0e0e0e;
+  --theme-side-nav-background: #1e1e1e;
 
   --theme-search-bar-panel: #161616;
   --theme-search-bar: #161616;
@@ -40,6 +41,7 @@
   --theme-list-background: #f0f0f0; /*that is to be replaced with an image*/
   --theme-image-background: #e0e0e0; /*that is to be replaced with an image*/
   --theme-footer-background: #e0e0e0;
+  --theme-side-nav-background: #fdfdfd;
 
   --theme-search-bar-panel: #e0e0e0e0;
   --theme-search-bar: white;

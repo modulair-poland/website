@@ -11,6 +11,10 @@
     height: 100%;
   }
 
+  a {
+    transition: 0.2s;
+  }
+
   .body-background {
     grid-area: intro / most-left / most-bottom / most-right;
     background-image: url("../../images/background-geometry-shapes.svg");
@@ -18,8 +22,13 @@
     background-repeat: repeat;
 
     z-index: -1;
-    background-size: 75%;
+    background-size: 700px;
     overflow: visible;
+  }
+
+  .desktop-only {
+    display: none;
+    visibility: hidden;
   }
 
   .theme-light .body-background {

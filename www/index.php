@@ -5,6 +5,7 @@ require_once("dbutils.php");
 <html lang="en" dir="ltr" class="theme-light">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- the browser should render the page with the device width !-->
     <link rel="icon" href="/images/logo-no-text.svg">
     <link rel="stylesheet" href="./css/index.css">
     <script type="text/javascript" src="./scripts/change-theme.js"> </script>
@@ -13,41 +14,17 @@ require_once("dbutils.php");
     <title>ModulAir</title>
   </head>
   <body>
+    <?php include "./includes/header.html" ?>
+    <?php include "./includes/footer.html" ?>
+
     <div class="body-background"></div>
-    <div class="header-background"></div>
     <div class="intro-background"></div>
     <div class="getting-started-background"></div>
     <div class="latest-updates-background"></div>
     <div class="my-module-background"></div>
     <div class="blog-background"></div>
-    <div class="footer-background"></div>
 
-    <div class="header">
-      <a class="logo" href="index.php">
-        ModulAir <div class="vl"></div>
-      </a>
-      <a class="home" href="index.php">
-        Home
-      </a>
-      <a class="get-started in-development">
-        Get started
-      </a>
-      <a class="modules" href="module-list.php">
-        Modules
-      </a>
-      <a class="documentation in-development">
-        Documentation
-      </a>
-      <a class="app in-development">
-        Application
-      </a>
-      <a class="faq in-development">
-        FAQ
-      </a>
-      <a class="about" href="about.php">
-        About
-      </a>
-    </div>
+
     <div class="intro">
       <div class="text">
         <h1>ModulAir</h1>
@@ -147,37 +124,6 @@ require_once("dbutils.php");
     </div>
     <div class="blog">
       Want to know more about the latest updates? Check out our <a href="blog.php">blog</a>.
-    </div>
-    <div class="footer">
-      <div class="footer-buttons">
-        <img class="logo" src="./images/logo.svg" alt="logo">
-        <label>&copy; 2020 ModulAir</label>
-
-        <button type="button"> English </button>
-
-        <button id="theme-button" type="button" onclick="changeTheme();"> </button>
-      </div>
-      <div class="footer-links">
-        <div class="text">
-          <a href="https://github.com/modulair-poland">GitHub</a>
-          <a href="https://www.facebook.com/ModulAirTeam">Fanpage</a>
-          <a class="in-development">FAQ</a>
-          <a href="blog.php">Blog</a>
-          <a href="about.php">About</a>
-        </div>
-
-      </div>
-      <div class="footer-sponsors">
-        <div class="text">
-          <!-- THIS IS TO BE ADDED ONCE WE HAVE SOME RELIABLE SPONSORS
-          Sponsors
-          <img src="" alt="logo1">
-          <img src="" alt="logo2">
-          <img src="" alt="logo3">
-          !-->
-        </div>
-
-      </div>
     </div>
   </body>
 
