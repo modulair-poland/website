@@ -7,17 +7,25 @@ e.g. class="panel panel-singular"
 @media only screen and (max-width: 600px) {
   /* panel with text on the left and image/icon on the right - BASIC */
   .panel {
-    display: grid;
-    grid-template-columns: [text] 1fr [photo] 35% [right];
-    grid-template-rows: [top] auto [bottom];
+    display: flex;
+    justify-content: space-between;
+
     margin: 10px 10px 10px 10px;
     border-radius: 10px;
     color: var(--theme-text-light);
     background-color: var(--theme-background);
   }
   .panel > .text {
+    order: 1;
+    flex-grow: 1;
+
     padding: 0px 20px 30px 20px;
     line-height: 1.2;
+  }
+  .panel > .icon {
+    order: 2;
+
+    width: 35%;
   }
 
   /* panel only with content (no grid) */
@@ -29,17 +37,21 @@ e.g. class="panel panel-singular"
   }
 
   /* a panel with a large photo */
-  .panel-large {
-    grid-template-columns: [text] 1fr [photo] 40% [right];
+  .panel-large > .image {
+    order: 2;
+
+    width: 40%;
   }
 
   /* panel with text, tags and price on the left and image on the right */
   .panel-list {
     width: auto;
     height: auto;
+
     display: grid;
     grid-template-columns: [text] 1fr [text-mid] 1fr [photo] 20% [right];
     grid-template-rows: [top] auto [additional] auto [bottom];
+
     margin: 10px 10px 30px 10px;
     padding: 15px 15px 15px 15px;
     border-radius: 10px;
@@ -64,6 +76,7 @@ e.g. class="panel panel-singular"
 
   /* panel with a small icon */
   .panel-tiny-icon {
+    display: grid;
     grid-template-columns: [text] 1fr [photo] 20% [right];
     grid-template-rows: [top] auto [bottom] auto [most-bottom];
   }

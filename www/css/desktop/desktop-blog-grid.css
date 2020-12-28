@@ -30,11 +30,14 @@
   }
 
 
-  /* subcontainer layout:*/
+  /* clicky panels for choosing the right blog posts */
   .panels {
-    display: grid;
+    display: flex;/*
     grid-template-columns: [panel1] auto [panel2] auto [panel3] auto [panel4] auto [right];
-    grid-template-rows: [top] auto [bottom];
+    grid-template-rows: [top] auto [bottom];*/
+  }
+  .panels > div {
+    flex-basis: 25%;
   }
 
 }

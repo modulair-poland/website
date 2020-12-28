@@ -8,10 +8,36 @@
     grid-area: header / left / intro / right;
 
     display: grid;
-    grid-template-columns: [logo] 150px [home] auto [get-started] auto [modules] auto [documentation] 1fr [app] auto [faq] auto [about] auto [right] auto [most-right];
+    grid-template-columns: [logo] 150px [home] auto [get-started] auto [modules] auto [documentation] auto [blank] 1fr [app] auto [faq] auto [about] auto [right] auto [most-right];
     grid-template-rows: [top] 1fr [bottom];
 
   }
+  /* HEADER CONTENT LAYOUT */
+  .header > .logo {
+    grid-column-start: logo;
+  }
+  .header > .home {
+    grid-column-start: home;
+  }
+  .header > .get-started {
+    grid-column-start: get-started;
+  }
+  .header > .modules {
+    grid-column-start: modules;
+  }
+  .header > .documentation {
+    grid-column-start: documentation;
+  }
+  .header > .app {
+    grid-column-start: app;
+  }
+  .header > .faq {
+    grid-column-start: faq;
+  }
+  .header > .about {
+    grid-column-start: about;
+  }
+
   /* header elements */
   .header > a {
     margin: auto 20px auto 20px;
