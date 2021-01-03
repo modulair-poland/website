@@ -66,13 +66,10 @@
         Of course the project wouldn't ever come to existence if not for our dear sponsors, who supported us their experiece and fundings, and to whom we are thankful.
       </div>
       <div class="text">
-        <!-- THIS IS TO BE ADDED WHEN SOME RELIABLE SPONSORS APPEAR
         The list of our sponsors:
         <ul>
-          <li>One company</li>
-          <li>Another company</li>
+          <li>BOTLAND B.Derkacz sp.j. <a href="https://botland.com.pl/">botland.com.pl/</a> </li>
         </ul>
-        !-->
       </div>
     </div>
     <div class="special-thanks">
