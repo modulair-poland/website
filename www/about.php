@@ -33,7 +33,7 @@
       <div class="text">
         ModulAir is a team from a Toruń high school, taking part in the CanSat competition in Poland.
         Our aim is to popularise science by making the process of mini-satellite creation
-        easier and thus more accessible to people without engineering or programming experience, as well as simply faster for geeks.
+        easier and thus more accessible to people without engineering or programming experience, as well as simply faster for individuals and teams with technical expertise.
         We believe that probe creation doesn't need to be difficult! And that is why we give You all the documentation, projects and tips for doing it Yourself!
       </div>
       <div class="text">
@@ -55,7 +55,7 @@
       <h1>CanSat ESA contest</h1>
       <div class="text">
         The European CanSat Competition organized by ESA is a challenge aimed at students from 14 to 19 years old.
-        The participants work in a <span class="emphasis">team</span> to build, test and launch a mini-satellite to be deployed from a rocket at an altitude of 1km.
+        The participants work in a <span class="emphasis">team</span> to build, test and launch a mini-satellite to be deployed from a rocket at an altitude of 2km.
         The contest grants a great <span class="emphasis">experiece</span> ranging from engineering and programing to collecting funds and teamwork,
         so it can be a challenge for anyone!
       </div>

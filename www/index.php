@@ -28,7 +28,7 @@ require_once("dbutils.php");
     <div class="intro">
       <div class="text">
         <h1 class="desktop-only">ModulAir</h1>
-        The main website of the greatest CanSat project ever made
+        The main website of the modular satellite project
       </div>
       <div class="intro-image">
         <img src="images/logo.svg" alt="no image found">
@@ -42,7 +42,7 @@ require_once("dbutils.php");
             <div class="panel">
               <div class="text">
                 <h3>Get started</h3>
-                This is how to get started quickly
+                Start quickly with this beginner's guide
               </div>
               <div class="icon">
                 <img id="get-started" alt="Get started">
@@ -68,7 +68,7 @@ require_once("dbutils.php");
             <div class="panel">
               <div class="text">
                 <h3>Documentation</h3>
-                A thouroughly prepared documentation for geeks
+                A thouroughly prepared, intelligible documentation
               </div>
               <div class="icon">
                 <img id="documentation" alt="Documentation">
@@ -106,13 +106,13 @@ require_once("dbutils.php");
         </div>
     </div>
     <div class="my-module">
-      <h1>My Module</h1>
+      <h1>My-Module</h1>
       <div class="panel-enclosure">
         <a class="panel-link in-development">
           <div class="panel panel-large">
             <div class="text">
               <h3> Can't find any module that fits Your needs? </h3>
-              Now you can design your own with My module kit.
+              Now you can design your own with My-Module kit.
             </div>
             <div class="image">
               <img id="my-module" alt="My module">

@@ -40,7 +40,7 @@
     <div class="list" id="modulesList">
     </div>
     <div class="my-module">
-      Didn't find any module that would suit Your needs? Check out <a class="in-development">My module kit</a>
+      Didn't find any module that would suit Your needs? Check out <a class="in-development">My-Module kit</a>
       to help You create Your own.
     </div>
   </body>
