@@ -3,7 +3,7 @@
 .theme-dark, :root {
   --theme-text: #cccccc;
   --theme-text-invert: #eeeeee;
-  --theme-text-light: #5e5e5e;
+  --theme-text-light: #9c9c9c;
   --theme-text-light-emphasis: #7a7a7a;
   --theme-selection: #9badc4;
 
@@ -22,7 +22,7 @@
 
   --theme-outline: #3e3e3e;
   --theme-outline-strong: #5e5e5e;
-  --theme-shadow: #000000cc;
+  --theme-shadow: #77777722;
 
   --theme-search-bar-border-width: 1px;
 }
