@@ -69,7 +69,7 @@
         The list of our sponsors:
         <ul>
           <li>BOTLAND B.Derkacz sp.j. <a href="https://botland.com.pl/">botland.com.pl/</a> </li>
-		  <li>NETTIGO W.Rugowski<a href="https://nettigo.pl/">nettigo.pl</a> </li>
+		  <li>NETTIGO W.Rugowski <a href="https://nettigo.pl/">nettigo.pl/</a> </li>
         </ul>
       </div>
     </div>
