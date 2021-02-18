@@ -59,7 +59,7 @@ require_once("dbutils.php");
               <a class="panel-link">
                 <div class="panel panel-long">
                   <div class="text">
-                    <h3> How to assembly the can from all the components </h3>
+                    <h3> How to assemble the can from all the components </h3>
                     <div class="text">
                         <div class="hl"></div>
                         <div class="step">
