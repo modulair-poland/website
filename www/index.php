@@ -38,7 +38,7 @@ require_once("dbutils.php");
       <h1>Start Your journey with science</h1>
       <div class="panels">
         <div class="panel-enclosure">
-          <a class="panel-link in-development">
+          <a class="panel-link" href="get-started.php">
             <div class="panel">
               <div class="text">
                 <h3>Get started</h3>

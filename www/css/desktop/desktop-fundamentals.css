@@ -46,4 +46,13 @@
     margin-left: 15%;
   }
 
+  .hl {
+      display: block;
+      width: 100%;
+      border-top: solid 1px var(--theme-text-light);
+      margin-top: 30px;
+      margin-bottom: 20px;
+  }
+
+
 }

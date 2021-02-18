@@ -1,0 +1,64 @@
+@media only screen and (max-width: 600px) {
+
+  body {
+    grid-template-rows: [header] 55px [intro] 250px [tutorial-list] auto [tutorials] auto [footer] auto [most-bottom];
+  }
+
+  /* background layout */
+  .intro-background {
+    grid-area: intro / most-left / tutorial-list / most-right;
+  }
+  .tutorial-list-background {
+    grid-area: tutorial-list / most-left / tutorials / most-right;
+  }
+  .tutorials-background {
+    grid-area: tutorials / most-left / footer / most-right;
+  }
+
+
+  /* main content container layout */
+  .intro {
+    grid-area: intro / left / tutorial-list / right;
+  }
+  .tutorial-list {
+    grid-area: tutorial-list / left / tutorials / right;
+    padding: 15px 0px 15px 0px;
+  }
+  .tutorials {
+    grid-area: tutorials / left / footer / right;
+    padding: 15px 0px 15px 0px;
+  }
+
+
+  /* subcontainer layout:*/
+
+
+  /* tutorial list panels */
+  .tutorial-list > .panels {
+    display: grid;
+    grid-template-rows: [panel1] 1fr [bottom];
+    grid-template-columns: [left] auto [right];
+  }
+  .tutorial-list > .panels > .panel-enclosure > .panel-link > .panel > .text {
+    padding: 0px 20px 15px 20px;
+  }
+  .tutorial-list .panel {
+    padding-top: 10px;
+  }
+  .tutorial-list .panel > .text > h3 {
+    padding-top: 10px;
+    padding-bottom: 0px;
+    margin: 0;
+  }
+  .tutorial-list .panel > .text {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 0;
+  }
+
+
+  .tutorials > .tutorial > .panel > .text {
+    padding: 20px 30px 20px 20px;
+  }
+
+}

@@ -119,4 +119,22 @@ e.g. class="panel panel-singular"
     background-color: transparent;
   }
 
+
+  /* a long panel with possibly many images and paragraphs */
+  .panel-long {
+      display: block;
+  }
+  .panel-long img {
+      width: 30%;
+  }
+  .panel-long .step {
+      display: flex;
+  }
+  .panel-long .step .text {
+      flex-grow: 3;
+  }
+  .panel-long .step .image {
+      flex-grow: 5;
+  }
+
 }
