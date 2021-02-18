@@ -40,7 +40,7 @@ require_once("dbutils.php");
             <div class="panel">
               <div class="text">
                 <h3>Can assembly</h3>
-                How to assembly the can from all the components
+                How to assemble the can from all the components
               </div>
               <div class="icon">
                 <img id="assembly" alt="Assembly">
