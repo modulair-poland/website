@@ -1,9 +1,11 @@
 
 .tag {
-  display: inline;
+  display: inline-block;
   background-color: var(--theme-footer-background);
   margin-left: 3px;
   margin-right: 3px;
+  margin-top: 2px;
+  margin-bottom: 2px;
   padding: 6px 15px 6px 15px;
   border-radius: 20px;
 }
